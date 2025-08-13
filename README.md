@@ -53,11 +53,6 @@ To preserve privacy and comply with ethical standards:
 -	The URLs of the data sources are intentionally omitted.
 -	The scraping code is presented for educational purposes only, as part of a natural language processing (NLP) pipeline.[Scraping Code](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/university_reviews_scraper.ipynb)
   
-The script extracts basic information such as:
-- University name (anonymized)
-- Number of reviews
-- Average rating
-- Individual review text, date, and star rating
 
-## Technologies
+## 🛠 Technologies
 
