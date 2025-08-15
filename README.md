@@ -39,7 +39,7 @@ For privacy reasons, the universities are anonymized and referred to by numbers 
 
 
 
-   # 1. Data Collection
+   ## 1. Data Collection
    
 This project includes a demonstration of basic web scraping techniques used to collect student reviews of universities from publicly available websites.
 To preserve privacy and comply with ethical standards:
@@ -55,7 +55,7 @@ Key steps:
 - Processed HTML to extract structured data.
 - Saved results to .txt files for further processing.
 
-# 2. Preprocessing
+## 2. Preprocessing
 - Collected reviews from all sources were combined into a single DataFrame.
 - Records with missing review text were removed.
 - Since the data came from different platforms, inconsistencies appeared in:
@@ -71,8 +71,23 @@ Key steps:
 - Average ratings were calculated as the arithmetic mean of star ratings for each university.
 - A new Timestamp column was added for convenient date handling in further analysis.
 
-# 3. 📊 Exploratory Data Analysis (EDA)
-A plot of the distribution of review counts over time was created. The highest user activity was observed during 2017–2021, which may indicate an increased interest in discussing the quality of education during this period.
+## 3. 📊 Exploratory Data Analysis (EDA)
+A plot of the distribution of review counts over time was created. The highest user activity was observed during 2017–2021, which may indicate an increased interest in discussing the quality of education during this period
+
+![Distribution of review counts over time](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Years.png)
+
+ Built distribution and density plots to analyze the tendency towards positive/negative reviews
+ 
+ ![CDF](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/PDF.png)
+
+- 0.56% of reviews have high ratings
+- 0.07% of reviews have neutral ratings
+- 0.37% of reviews have low ratings
+![CDF](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/CDF.png)
+
+The top 10 universities with the highest average rating were selected, calculated as the arithmetic mean of user star ratings.
+
+
 
 ## 🛠 Technologies
 
