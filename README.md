@@ -31,7 +31,7 @@ For privacy reasons, the universities are anonymized and referred to by numbers 
 
 4. [**Sentiment Analysis with BERT**](https://github.com/SemdiankinaHalyna/University-review-analysis#4--sentiment-analysis-with-bert)
 
-5. [**[In Progress] Problem Classification Model**](https://github.com/SemdiankinaHalyna/University-review-analysis)
+5. [**[In Progress] Problem Classification Model**](https://github.com/SemdiankinaHalyna/University-review-analysis#5-problem-classification-model)
 
 
 ## 1. Data Collection
