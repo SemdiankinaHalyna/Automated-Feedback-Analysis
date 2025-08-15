@@ -23,7 +23,7 @@ For privacy reasons, the universities are anonymized and referred to by numbers 
 
 
 ## 📂 Project Structure
-1. [**Data Collection**](https://github.com/SemdiankinaHalyna/University-review-analysis)
+1. [**Data Collection**](https://github.com/SemdiankinaHalyna/University-review-analysis#1-data-collection)
    
 2. [**Preprocessing**](https://github.com/SemdiankinaHalyna/University-review-analysis)
 
