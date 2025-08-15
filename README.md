@@ -85,7 +85,9 @@ A plot of the distribution of review counts over time was created. The highest u
 - 0.37% of reviews have low ratings
 ![CDF](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/CDF.png)
 
-The top 10 universities with the highest average rating were selected, calculated as the arithmetic mean of user star ratings.
+The top 10 universities with the highest average rating were selected, calculated as the arithmetic mean of user star ratings
+
+![Avarage_Rating](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Avarage_Rating.png)
 
 
 
