@@ -23,23 +23,18 @@ For privacy reasons, the universities are anonymized and referred to by numbers 
 
 
 ## 📂 Project Structure
-1. **Data Collection - data was collected from three public platforms using Selenium + BeautifulSoup parsers.**
+1. **Data Collection**
    
-2. **Preprocessing – preprocessed textual and numerical review data.**
+2. **Preprocessing**
 
-3. **EDA – A plot of the distribution of review counts over time was created and built distribution and density plots to analyze the tendency towards positive/negative reviews. The top 10 universities with the highest average review ratings**
+3. **EDA**
 
-4. **Sentiment Analysis – applied BERT model for sentiment classification and compared results with star ratings.**
+4. **Sentiment Analysis with BERT**
 
-5. **University Ranking – created a ranking of universities based on review sentiment.**
-
-6. **Temporal Sentiment Trends – visualized year-by-year sentiment change as a heatmap.**
-
-7. **[In Progress] Problem Classification Model – developing a multi-class classification model to automatically identify key issues in negative reviews.**
+5. **[In Progress] Problem Classification Model**
 
 
-
-   ## 1. Data Collection
+## 1. Data Collection
    
 This project includes a demonstration of basic web scraping techniques used to collect student reviews of universities from publicly available websites.
 To preserve privacy and comply with ethical standards:
@@ -89,7 +84,49 @@ The top 10 universities with the highest average rating were selected, calculate
 
 ![Avarage_Rating](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Avarage_Rating.png)
 
+## 4. 🤖 Sentiment Analysis with BERT
+Using Hugging Face Transformers (BERT), the sentiment of each review was determined and stored in a separate column. The BERT output was converted into categorical labels: negative / neutral / positive.
+Compared BERT-predicted sentiment with star ratings.
+Calculated agreement metrics (accuracy and confusion matrix). The overall agreement between star ratings and BERT sentiment was 73.31%.
+
+![Confusion Matrix](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Confusion_Matrix.png)
+
+Confusion matrix results:
+
+- BERT performs fairly well at predicting positive reviews — 2,687 matches out of 3,533 (≈76%).
+
+- Negative reviews also show good alignment — 1,866 matches out of 2,329 (≈80%).
+
+- The biggest confusion is with positive ratings that BERT classified as negative — 664 cases (≈19% of all positive ratings).
+
+- Neutral sentiment has the lowest accuracy and the fewest examples — which is expected, as it is the most ambiguous category.
+  
+An analysis of the mismatched reviews showed that discrepancies arose either due to BERT misclassification or the nature of the review itself — presence of irony/sarcasm, or subjective ambiguity (neutral or mixed opinions that are hard to classify clearly).
+Therefore, for determining the overall sentiment of a university, only the reviews where BERT sentiment matched the star rating (73.31% of all reviews) were retained, ensuring that the sentiment score is reliable and trustworthy.
+
+A thorough filtering was performed: for the final analysis, only reviews where the star rating matched the predicted sentiment were used — this approach helps reduce error.
+The loss of a portion of reviews (~27%) did not have a critical impact: the analysis showed that these excluded reviews were evenly distributed across years and universities.
+
+I assigned sentiment index values (negative: -1, neutral: 0, positive: 1)(this allowed us to work with sentiment as a numeric score) and calculated the average sentiment score for each university.
+A heatmap was created to visualize sentiment dynamics over the years. The chart revealed that most universities had predominantly positive sentiment up until 2014–2015, after which sentiment began to decline in more than half of them
+
+![Heat Map](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Heat_Map.png))
+ 
+## 5. Problem Classification Model
+
+Preparation for topic classification
+For problem classification (e.g., teaching quality, accommodation, administration), a manually labeled dataset was created based on reviews with mismatches.
+This approach allowed the model to learn from the most ambiguous cases, which is expected to improve its accuracy in the future.
 
 
-## 🛠 Technologies
+## 🛠 Technologies 
+- Python
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Hugging Face Transformers (Bert)
+- Scikit-learn
+- PyTorch
 
