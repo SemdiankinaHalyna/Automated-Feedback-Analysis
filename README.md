@@ -39,7 +39,7 @@ For privacy reasons, the universities are anonymized and referred to by numbers 
 This project includes a demonstration of basic web scraping techniques used to collect student reviews of universities from publicly available websites.
 To preserve privacy and comply with ethical standards:
 -	The URLs of the data sources are intentionally omitted.
--	The scraping code is presented for educational purposes only, as part of a natural language processing (NLP) pipeline.[Scraping Code](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/university_reviews_scraper.ipynb)
+-	The scraping code is presented for educational purposes only, as part of a natural language processing (NLP) pipeline [Scraping Code](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/university_reviews_scraper.ipynb)
 
   To collect textual reviews from students about universities, an automated parser was implemented using Selenium and BeautifulSoup.
 
