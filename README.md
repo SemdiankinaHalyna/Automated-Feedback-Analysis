@@ -29,7 +29,7 @@ For privacy reasons, the universities are anonymized and referred to by numbers 
 
 3. [**EDA**](https://github.com/SemdiankinaHalyna/University-review-analysis#3--exploratory-data-analysis-eda)
 
-4. [**Sentiment Analysis with BERT**](https://github.com/SemdiankinaHalyna/University-review-analysis)
+4. [**Sentiment Analysis with BERT**](https://github.com/SemdiankinaHalyna/University-review-analysis#4--sentiment-analysis-with-bert)
 
 5. [**[In Progress] Problem Classification Model**](https://github.com/SemdiankinaHalyna/University-review-analysis)
 
