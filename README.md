@@ -23,15 +23,15 @@ For privacy reasons, the universities are anonymized and referred to by numbers 
 
 
 ## 📂 Project Structure
-1. **Data Collection**
+1. [**Data Collection**](https://github.com/SemdiankinaHalyna/University-review-analysis)
    
-2. **Preprocessing**
+2. [**Preprocessing**](https://github.com/SemdiankinaHalyna/University-review-analysis)
 
-3. **EDA**
+3. [**EDA**](https://github.com/SemdiankinaHalyna/University-review-analysis)
 
-4. **Sentiment Analysis with BERT**
+4. [**Sentiment Analysis with BERT**](https://github.com/SemdiankinaHalyna/University-review-analysis)
 
-5. **[In Progress] Problem Classification Model**
+5. [**[In Progress] Problem Classification Model**](https://github.com/SemdiankinaHalyna/University-review-analysis)
 
 
 ## 1. Data Collection
