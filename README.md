@@ -27,7 +27,7 @@ For privacy reasons, the universities are anonymized and referred to by numbers 
    
 2. **Preprocessing – preprocessed textual and numerical review data.**
 
-3. **Rating Distribution Analysis – built distribution and density plots to analyze the tendency towards positive/negative reviews.**
+3. **EDA – A plot of the distribution of review counts over time was created and built distribution and density plots to analyze the tendency towards positive/negative reviews. The top 10 universities with the highest average review ratings**
 
 4. **Sentiment Analysis – applied BERT model for sentiment classification and compared results with star ratings.**
 
@@ -39,14 +39,14 @@ For privacy reasons, the universities are anonymized and referred to by numbers 
 
 
 
-1. **Data Collection**
+   # 1. Data Collection
    
 This project includes a demonstration of basic web scraping techniques used to collect student reviews of universities from publicly available websites.
 To preserve privacy and comply with ethical standards:
 -	The URLs of the data sources are intentionally omitted.
 -	The scraping code is presented for educational purposes only, as part of a natural language processing (NLP) pipeline.[Scraping Code](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/university_reviews_scraper.ipynb)
 
-  To collect textual reviews from students about Ukrainian universities, an automated parser was implemented using Selenium and BeautifulSoup.
+  To collect textual reviews from students about universities, an automated parser was implemented using Selenium and BeautifulSoup.
 
 Key steps:
 - Opened the university page and hid advertisement blocks.
@@ -55,7 +55,7 @@ Key steps:
 - Processed HTML to extract structured data.
 - Saved results to .txt files for further processing.
 
-**Preprocessing**
+# 2. Preprocessing
 - Collected reviews from all sources were combined into a single DataFrame.
 - Records with missing review text were removed.
 - Since the data came from different platforms, inconsistencies appeared in:
@@ -70,6 +70,9 @@ Key steps:
 - The values in the “Number of Reviews” column were updated considering data from all sources.
 - Average ratings were calculated as the arithmetic mean of star ratings for each university.
 - A new Timestamp column was added for convenient date handling in further analysis.
+
+# 3. 📊 Exploratory Data Analysis (EDA)
+A plot of the distribution of review counts over time was created. The highest user activity was observed during 2017–2021, which may indicate an increased interest in discussing the quality of education during this period.
 
 ## 🛠 Technologies
 
