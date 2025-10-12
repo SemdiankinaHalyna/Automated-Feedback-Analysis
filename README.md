@@ -1,6 +1,6 @@
 # NLP_Analysis_of_University_Reviews
 
-### 📝 Project Overview
+### 📘 Project Overview
 
 In this project, I analyzed open feedback from students and graduates to identify key issues of universities and explore the dynamics of their reputation. Using **NLP techniques**, the project combines **sentiment analysis, multi-label classification, and semantic search** to extract insights from **review content**, **star ratings**, and **textual feedback**.
 
@@ -28,7 +28,7 @@ In this project, I analyzed open feedback from students and graduates to identif
 **For privacy reasons, the universities are anonymized** and referred to by numbers (e.g., University_1, University_2).
 
 
-## 📊 Data Description:
+## 📋 Data Description:
 
 - Number of universities: 21
 - Data volume: over 6,000 open reviews
@@ -42,7 +42,7 @@ In this project, I analyzed open feedback from students and graduates to identif
 - Review Text
 
 
-## 📂 Project Structure
+## 📝 Project Structure
 1. [**Data Collection**](https://github.com/SemdiankinaHalyna/University-review-analysis#1-data-collection)
    
 2. [**Preprocessing**](https://github.com/SemdiankinaHalyna/University-review-analysis#2-preprocessing)
@@ -59,7 +59,7 @@ In this project, I analyzed open feedback from students and graduates to identif
    
 
 
-## 1. Data Collection
+## 1. 🌐 Data Collection
    
 This project includes a demonstration of basic web scraping techniques used to collect student reviews of universities from publicly available websites.
 To preserve privacy and comply with ethical standards:
@@ -75,7 +75,7 @@ Key steps:
 - Processed HTML to extract structured data.
 - Saved results to .txt files for further processing.
 
-## 2. Preprocessing
+## 2. 🧹 Preprocessing
 - Collected reviews from all sources were combined into a single DataFrame.
 - Records with missing review text were removed.
 - Since the data came from different platforms, inconsistencies appeared in:
@@ -137,12 +137,15 @@ A heatmap was created to visualize sentiment dynamics over the years. The chart 
 
 ![Heat Map](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Heat_Map.png))
  
-## 5. Problem Classification Model
+## 5. 📂 Problem Classification Model
 
 Preparation for topic classification
 For problem classification (e.g., teaching quality, accommodation, administration), a manually labeled dataset was created based on reviews with mismatches.
 This approach allowed the model to learn from the most ambiguous cases, which is expected to improve its accuracy in the future.
 
+## 6. 🤝 Semantic Recommendations
+
+## 7. 📖 Semantic Search
 
 ## 🛠 Technologies 
 - Python
