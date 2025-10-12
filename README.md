@@ -1,4 +1,4 @@
-# University-review-analysis
+# NLP_Analysis_of_University_Reviews
 
 ### 📝 Project Overview
 In this project, I identified the key issues of universities based on open feedback from students and graduates, and explored the dynamics of their reputation by analyzing ratings, sentiment, and review content.
