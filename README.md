@@ -1,12 +1,32 @@
 # NLP_Analysis_of_University_Reviews
 
 ### 📝 Project Overview
-In this project, I identified the key issues of universities based on open feedback from students and graduates, and explored the dynamics of their reputation by analyzing ratings, sentiment, and review content.
+
+In this project, I analyzed open feedback from students and graduates to identify key issues of universities and explore the dynamics of their reputation. Using **NLP techniques**, the project combines **sentiment analysis, multi-label classification, and semantic search** to extract insights from **review content**, **star ratings**, and **textual feedback**.
 
 ### 🎯 Project Goal
-  
-This project is intended solely for educational and research purposes and does not represent any official evaluation or ranking of the institutions.
-For privacy reasons, the universities are anonymized and referred to by numbers (e.g., University_1, University_2).
+
+1. **Sentiment Analysis of Reviews**  
+   - **Analyze student reviews** by combining **star ratings** with **text sentiment** using a pre-trained BERT model: `nlptown/bert-base-multilingual-uncased-sentiment`.  
+   - **Goal:** Automatically classify reviews as **positive, neutral, or negative**.
+
+2. **Identify Key University Issues**  
+   - **Perform multi-label classification** to detect major issues highlighted in reviews.  
+   - **Approach:** **TF-IDF + fine-tuned embeddings** (`sentence-transformers/paraphrase-multilingual-mpnet-base-v2`) with **logistic regression**.  
+   - **Goal:** Extract **actionable insights** about university performance and student concerns.
+
+3. **Find Like-Minded Reviews (Semantic Recommendations)**  
+   - **After a user submits a review**, the system uses **NLP embeddings** to identify the **top-5 semantically similar reviews**, helping users connect with others who share similar opinions.
+
+4. **Search Relevant Reviews (Semantic Search)**  
+   - **Users can input a query**, and the system leverages **semantic search** to retrieve the **most relevant reviews** matching the query.
+
+---
+
+**Note:**  
+**This project is intended solely for educational and research purposes** and does not represent any official evaluation or ranking of the institutions.  
+**For privacy reasons, the universities are anonymized** and referred to by numbers (e.g., University_1, University_2).
+
 
 ## 📊 Data Description:
 
