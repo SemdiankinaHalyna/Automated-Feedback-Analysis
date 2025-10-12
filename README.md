@@ -55,7 +55,7 @@ In this project, I analyzed open feedback from students and graduates to identif
 
 6. [**[In Progress]Semantic Recommendations**](https://github.com/SemdiankinaHalyna/University-review-analysis#6--semantic-recommendations)
 
-7. [**[In Progress] Semantic Search**](https://github.com/SemdiankinaHalyna/University-review-analysis#6--semantic-search)
+7. [**[In Progress] Semantic Search**](https://github.com/SemdiankinaHalyna/University-review-analysis#7--semantic-search)
 
    
 
