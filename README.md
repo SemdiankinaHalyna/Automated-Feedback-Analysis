@@ -51,7 +51,12 @@ In this project, I analyzed open feedback from students and graduates to identif
 
 4. [**Sentiment Analysis with BERT**](https://github.com/SemdiankinaHalyna/University-review-analysis#4--sentiment-analysis-with-bert)
 
-5. [**[In Progress] Problem Classification Model**](https://github.com/SemdiankinaHalyna/University-review-analysis#5-problem-classification-model)
+5. [**Problem Classification Model**](https://github.com/SemdiankinaHalyna/University-review-analysis#5-problem-classification-model)
+
+6. **[In Progress]Semantic Recommendations**
+
+7. **[In Progress] Semantic Search**
+   
 
 
 ## 1. Data Collection
