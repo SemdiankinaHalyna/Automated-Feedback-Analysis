@@ -76,21 +76,46 @@ Key steps:
 - Processed HTML to extract structured data.
 - Saved results to .txt files for further processing.
 
-## 2. 🧹 Preprocessing
-- Collected reviews from all sources were combined into a single DataFrame.
-- Records with missing review text were removed.
-- Since the data came from different platforms, inconsistencies appeared in:
+## Preprocessing ⚙️
 
-  - university names,
-  - date format,
-  - number of reviews,
-  - average ratings.
+### 1️⃣ Initial Data Preparation 🌐
+- Collected reviews from all sources were **merged into a single DataFrame**.  
+- **Removed records** with missing review text.  
+- Since data came from different platforms, inconsistencies were found in:  
+  - University names  
+  - Date formats  
+  - Number of reviews  
+  - Average ratings  
+- **Standardized university names** (consistent abbreviations, removed extra spaces/symbols).  
+- **Excluded universities with fewer than 100 reviews** to ensure statistical significance.  
+- **Updated “Number of Reviews”** column considering data from all sources.  
+- **Calculated average ratings** as the arithmetic mean of star ratings per university.  
+- **Added a Timestamp column** for consistent date handling in later analysis.
 
-- University names were standardized (e.g., consistent abbreviation usage, removal of extra spaces/symbols).
-- Universities with fewer than 100 reviews were excluded from the analysis to ensure statistical significance.
-- The values in the “Number of Reviews” column were updated considering data from all sources.
-- Average ratings were calculated as the arithmetic mean of star ratings for each university.
-- A new Timestamp column was added for convenient date handling in further analysis.
+---
+
+### 2️⃣ Data Preprocessing 🗂️
+- **Harmonized** column names, data types, and value formats.  
+- **Converted** all data to strings for consistency.  
+- **Safely replaced** `NaN`, lists, numbers, or unusual formats:  
+  - Numbers stored as **Num** (e.g., `123 → "Num"`)  
+  - Time values stored as **Time** (e.g., `12:30 → "Time"`)  
+- **Removed** completely empty records.  
+- Prepared a **clean, structured DataFrame** for NLP processing.
+
+---
+
+### 3️⃣ NLP Text Cleaning 🧹
+- Converted all text to **lowercase**.  
+- **Removed** unwanted punctuation and normalized spaces.  
+- **Filtered** non-letter tokens (kept only alphabetic words).  
+- **Lemmatized** words to their base form.  
+- **Removed stopwords** (common non-informative words).  
+- **Filtered by language:** kept only **Ukrainian** and **Russian** reviews.  
+- **Removed extremely long reviews** (outliers by word count).  
+- **Removed very short reviews** (less than 3 words after cleaning).  
+- Saved **cleaned, ready-to-use text files** for further modeling.
+
 
 ## 3. 📊 Exploratory Data Analysis (EDA)
 A plot of the distribution of review counts over time was created. The highest user activity was observed during 2017–2021, which may indicate an increased interest in discussing the quality of education during this period
