@@ -114,7 +114,7 @@ Key steps:
 - **Filtered by language:** kept only **Ukrainian** and **Russian** reviews.  
 - **Removed extremely long reviews** (outliers by word count).  
 - **Removed very short reviews** (less than 3 words after cleaning).  
-- Saved **cleaned, ready-to-use text files** for further modeling [Preprocessing Code]([https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/WordCloud.png])
+- Saved **cleaned, ready-to-use text files** for further modeling [Preprocessing Code](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/NLP_files/Text_preprocessing_clean.ipynb)
 
 ---
 
