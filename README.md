@@ -114,8 +114,13 @@ Key steps:
 - **Filtered by language:** kept only **Ukrainian** and **Russian** reviews.  
 - **Removed extremely long reviews** (outliers by word count).  
 - **Removed very short reviews** (less than 3 words after cleaning).  
-- Saved **cleaned, ready-to-use text files** for further modeling [Preprocessing Code](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/university_reviews_scraper.ipynb)
+- Saved **cleaned, ready-to-use text files** for further modeling [Preprocessing Code]([https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/WordCloud.png])
 
+---
+
+![Word Cloud](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/WordCloud.png)
+
+---
 
 ## 3. 📊 Exploratory Data Analysis (EDA)
 A plot of the distribution of review counts over time was created. The highest user activity was observed during 2017–2021, which may indicate an increased interest in discussing the quality of education during this period
