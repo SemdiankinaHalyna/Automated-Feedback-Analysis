@@ -80,7 +80,7 @@ Key steps:
 - Processed HTML to extract structured data.
 - Saved results to .txt files for further processing.
 
-## Preprocessing ⚙️
+## 2. Preprocessing ⚙️
 
 ### 1️⃣ Initial Data Preparation 🌐
 - Collected reviews from all sources were **merged into a single DataFrame**.  
@@ -126,7 +126,7 @@ Key steps:
 
 ---
 
-### 5️⃣ Data Augmentation 🔁
+### 4️⃣ Data Augmentation 🔁
 
 To address **class imbalance** among categories, data augmentation was applied:
 
