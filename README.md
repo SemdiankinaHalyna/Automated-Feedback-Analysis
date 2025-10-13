@@ -118,13 +118,28 @@ Key steps:
 - **Filtered by language:** kept only **Ukrainian** and **Russian** reviews.  
 - **Removed extremely long reviews** (outliers by word count).  
 - **Removed very short reviews** (less than 3 words after cleaning).  
-- Saved **cleaned, ready-to-use text files** for further modeling [Preprocessing Code](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/NLP_files/Text_preprocessing_clean.ipynb)
+- Saved **cleaned, ready-to-use text files** for further modeling 
 
 ---
 
 ![Word Cloud](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/WordCloud.png)
 
 ---
+
+### 5️⃣ Data Augmentation 🔁
+
+To address **class imbalance** among categories, data augmentation was applied:
+
+- Categories with the most **mixed or underrepresented labels** were expanded.  
+  Only reviews with a **single label** were selected for augmentation to preserve semantic clarity.  
+- Augmentation was performed via **machine translation**, using the `langdetect` library for language identification:  
+  - If a review was written in **Ukrainian**, it was translated into **Russian**.  
+  - If a review was written in **Russian**, it was translated into **Ukrainian**.  
+- This approach helped **increase the training dataset size** and achieve a **better linguistic balance**, improving model robustness across both languages.  
+- The **original (non-augmented) dataset** was preserved and used for **hyperparameter tuning with cross-validation**,  
+  in order to **avoid data leakage** and ensure fair model evaluation [Preprocessing Code](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/NLP_files/Text_preprocessing_clean.ipynb)
+
+
 
 ## 3. 📊 Exploratory Data Analysis (EDA)
 A plot of the distribution of review counts over time was created. The highest user activity was observed during 2017–2021, which may indicate an increased interest in discussing the quality of education during this period
