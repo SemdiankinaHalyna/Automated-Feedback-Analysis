@@ -14,11 +14,15 @@ In this project, I analyzed open feedback from students and graduates to identif
    - **Perform multi-label classification** to detect major issues highlighted in reviews.  
    - **Approach:** **TF-IDF + fine-tuned embeddings** (`sentence-transformers/paraphrase-multilingual-mpnet-base-v2`) with **logistic regression**.  
    - **Goal:** Extract **actionable insights** about university performance and student concerns.
+     
+3.  To examine **language trends** in student reviews  
+   — to determine **which language (Ukrainian or Russian) predominates** (using *langdetect*)  
+   — and how the **linguistic distribution has changed over time** (visualized with a **heatmap**).
 
-3. **Find Like-Minded Reviews (Semantic Recommendations)**  
+4. **Find Like-Minded Reviews (Semantic Recommendations)**  
    - **After a user submits a review**, the system uses **NLP embeddings** to identify the **top-5 semantically similar reviews**, helping users connect with others who share similar opinions.
 
-4. **Search Relevant Reviews (Semantic Search)**  
+5. **Search Relevant Reviews (Semantic Search)**  
    - **Users can input a query**, and the system leverages **semantic search** to retrieve the **most relevant reviews** matching the query.
 
 ---
