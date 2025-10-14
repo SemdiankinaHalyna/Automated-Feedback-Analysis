@@ -187,7 +187,7 @@ The loss of a portion of reviews (~27%) did not have a critical impact: the anal
 I assigned sentiment index values (negative: -1, neutral: 0, positive: 1)(this allowed us to work with sentiment as a numeric score) and calculated the average sentiment score for each university.
 A heatmap was created to visualize sentiment dynamics over the years. The chart revealed that most universities had predominantly positive sentiment up until 2014–2015, after which sentiment began to decline in more than half of them
 
-![Heat Map](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Heat_Map.png))
+![Heat Map](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Heat_Map.png)
  
 ## 5. 📂 Training Classification Model
 
@@ -271,7 +271,7 @@ and **analyze key problem categories** across different universities.
 - **Attitude Towards Students, Corruption, Academic Process Management:** These three categories have roughly similar shares, each contributing about **19–20%** of negative labels.  
 - **Campus Conditions:** The smallest proportion of complaints is related to **Campus Conditions**, accounting for **12.5%**.
 
- ![CDF](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/PDF.png)
+ ![Insights_1](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Insights_1.png))
 
 ## 7. 🤝 Semantic Recommendations
 
