@@ -240,7 +240,8 @@ The problem categories are:
   - Weighted average  
   - Samples average  
 
-**Model selection:** Evaluate performance and choose the best model based on metrics.
+**Model selection:** Evaluate performance and choose the best model based on metrics 
+
 
 ## 🧩 **Conclusion**
 
@@ -258,12 +259,12 @@ The problem categories are:
   Further improvement may require applying **more advanced architectures such as LLM-based models** capable of deeper contextual understanding.
 
 Overall, the **hybrid model** demonstrates **robust generalization** across categories and provides a **strong baseline** for further refinement.
-
+[Training Code]https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/NLP_files/training_model_.ipynb
 
 ## 6. 📊 Inference and University Problem Analysis
 
 Using the trained multi-label classification model to perform **inference on new reviews**  
-and **analyze key problem categories** across different universities.
+and **analyze key problem categories** across different universities [Inference Code]https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/NLP_files/training_model_.ipynb
 
 ### 📊 Key Insights from Overall Negative Feedback
 
