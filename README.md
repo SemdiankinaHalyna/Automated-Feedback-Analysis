@@ -189,9 +189,76 @@ A heatmap was created to visualize sentiment dynamics over the years. The chart 
  
 ## 5. 📂 Problem Classification Model
 
-Preparation for topic classification
-For problem classification (e.g., teaching quality, accommodation, administration), a manually labeled dataset was created based on reviews with mismatches.
-This approach allowed the model to learn from the most ambiguous cases, which is expected to improve its accuracy in the future.
+To build the **classification model**, **510 negative student reviews** about universities were **manually labeled**.
+
+Each review could belong to **one or more problem categories** simultaneously, making this a **multi-label classification task**. In total, **700 labels** were assigned.
+
+The problem categories are:
+
+- **Attitude_Towards_Students**
+- **Campus_conditions**
+- **Corruption**
+- **Academic_Process_Management**
+- **Education_Quality**
+
+---
+
+## 🧠 ML Pipeline Overview
+
+1. **Load necessary libraries**
+2. **Load datasets** – datasets were **pre-cleaned and pre-processed**  
+3. **Label-based fine-tuning of Transformer model**  
+   (`sentence-transformers/paraphrase-multilingual-mpnet-base-v2`)  
+
+### Block 1: Train on Fine-Tuned Embeddings Only
+
+- **Grid Search** for hyperparameter tuning using cross-validation  
+- **Train Logistic Regression** on **fine-tuned embeddings** (`sentence-transformers/paraphrase-multilingual-mpnet-base-v2`) using  
+  `OneVsRestClassifier(LogisticRegression())`  
+- **Evaluate model** with metrics:  
+  - Precision  
+  - Recall  
+  - F1-score  
+  - Micro average  
+  - Macro average  
+  - Weighted average  
+  - Samples average  
+
+### Block 2: Train on Fine-Tuned Embeddings + TF-IDF
+
+- **Grid Search** for hyperparameter tuning using cross-validation  
+- **Train Logistic Regression** on **fine-tuned embeddings + TF-IDF** (`sentence-transformers/paraphrase-multilingual-mpnet-base-v2`) using  
+  `OneVsRestClassifier(LogisticRegression())`  
+- **Evaluate model** with metrics:  
+  - Precision  
+  - Recall  
+  - F1-score  
+  - Micro average  
+  - Macro average  
+  - Weighted average  
+  - Samples average  
+
+**Model selection:** Evaluate performance and choose the best model based on metrics.
+
+## 🧩 **Conclusion**
+
+> **💡 Note:**  
+> Training on the **hybrid feature set** combining *TF-IDF* and *SentenceTransformer embeddings*  
+> yields **better performance** than training on **embeddings alone**.
+
+- **Hybrid model** achieves **Micro F1 ≈ 0.72** and **Macro F1 ≈ 0.72**  
+- **Embeddings only:** Micro F1 ≈ 0.72, Macro F1 ≈ 0.71  
+
+**Category-level insights:**
+- **Academic_Process_Management:** notable improvement — F1-score increased from **0.62 → 0.71**  
+- **Attitude_Towards_Students:** remains the most challenging category (**F1 ≈ 0.60**).  
+  This category includes **diverse linguistic expressions** and shows **complex semantic overlap** with other problem types.  
+  Further improvement may require applying **more advanced architectures such as LLM-based models** capable of deeper contextual understanding.
+
+Overall, the **hybrid model** demonstrates **robust generalization** across categories and provides a **strong baseline** for further refinement.
+
+
+
 
 ## 6. 🤝 Semantic Recommendations
 
