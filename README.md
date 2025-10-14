@@ -265,6 +265,13 @@ Overall, the **hybrid model** demonstrates **robust generalization** across cate
 Using the trained multi-label classification model to perform **inference on new reviews**  
 and **analyze key problem categories** across different universities.
 
+### 📊 Key Insights from Overall Negative Feedback
+
+- **Education Quality:** The largest share of negative feedback is related to **Education Quality**, accounting for **28.6%** of all negative labels.  
+- **Attitude Towards Students, Corruption, Academic Process Management:** These three categories have roughly similar shares, each contributing about **19–20%** of negative labels.  
+- **Campus Conditions:** The smallest proportion of complaints is related to **Campus Conditions**, accounting for **12.5%**.
+
+ ![CDF](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/PDF.png)
 
 ## 7. 🤝 Semantic Recommendations
 
