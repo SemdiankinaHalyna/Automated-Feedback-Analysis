@@ -240,7 +240,7 @@ The problem categories are:
   - Weighted average  
   - Samples average  
 
-**Model selection:** Evaluate performance and choose the best model based on metrics [Training Code]https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/NLP_files/training_model_.ipynb
+**Model selection:** Evaluate performance and choose the best model based on metrics [Training Code](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/NLP_files/training_model_.ipynb)
 
 
 
