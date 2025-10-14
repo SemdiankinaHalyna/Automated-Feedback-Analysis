@@ -270,9 +270,41 @@ and **analyze key problem categories** across different universities.
 - **Education Quality:** The largest share of negative feedback is related to **Education Quality**, accounting for **28.6%** of all negative labels.  
 - **Attitude Towards Students, Corruption, Academic Process Management:** These three categories have roughly similar shares, each contributing about **19–20%** of negative labels.  
 - **Campus Conditions:** The smallest proportion of complaints is related to **Campus Conditions**, accounting for **12.5%**.
-
  ![Insights_1](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Insights_1.png))
 
+## 📌 Analysis of Key Problems by Universities
+
+- **Attitude Towards Students:** The worst rating was observed in **university_12**.  
+- **Campus Conditions:** The poorest conditions were reported in **university_17**.  
+- **Corruption:** The highest level of corruption was found in **university_14**.  
+- **Academic Process Management:** The least effective management of the academic process was noted in **university_13**.  
+- **Education Quality:** The lowest quality of education was recorded in **university_15**.  
+> These findings are based on the proportion of negative labels assigned to each category per university.
+![Insights_2](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Insights_2.png))
+
+### 📊 Key Insights from Negative Feedback Across Years
+
+- **Attitude Towards Students:** From 2017 onwards, complaints about student treatment have noticeably increased.  
+- **Corruption:** The highest frequency of complaints occurred during 2010–2019.  
+- **Academic Process Management:** Complaints peaked starting in 2021, reaching a particularly high share of **57.6%** of all reviews, likely related to the organization of the academic process during the war period.  
+- **Education Quality:** Throughout all years, there has been a consistently high number of complaints regarding the quality of education.
+  ![Insights_3](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Insights_3.png))
+
+  ### 🌐 Language Distribution of Reviews
+
+- Approximately **50% of reviews are in Ukrainian**.  
+- Approximately **50% of reviews are in Russian**.  
+- There are no other significant languages after removing the single Bulgarian review.
+    ![Insights_4](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Insights_4.png))
+
+  # 🗣️ Language Dynamics of Reviews Over Time
+
+- In **2010–2012**, the distribution of review languages was roughly **50/50 between Ukrainian and Russian**.  
+- Between **2013 and 2020**, reviews written in **Russian** became more prevalent.  
+- Starting from **2022 and onward**, the majority of reviews have been written in **Ukrainian**.  
+  This shift likely reflects broader sociolinguistic changes in society, where more users consciously choose to communicate in Ukrainian in the context of recent events and the ongoing war.
+      ![Insights_5](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Insights_5.png))
+  
 ## 7. 🤝 Semantic Recommendations
 
 ## 8. 📖 Semantic Search
