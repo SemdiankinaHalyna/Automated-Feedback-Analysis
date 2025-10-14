@@ -55,11 +55,13 @@ In this project, I analyzed open feedback from students and graduates to identif
 
 4. [**Sentiment Analysis with BERT**](https://github.com/SemdiankinaHalyna/University-review-analysis#4--sentiment-analysis-with-bert)
 
-5. [**Problem Classification Model**](https://github.com/SemdiankinaHalyna/University-review-analysis#5--problem-classification-model)
+5. [**Training Classification Model**](https://github.com/SemdiankinaHalyna/University-review-analysis#5--training-classification-model)
 
-6. [**[In Progress]Semantic Recommendations**](https://github.com/SemdiankinaHalyna/University-review-analysis#6--semantic-recommendations)
+6. [**Inference and University Problem Analysis**](https://github.com/SemdiankinaHalyna/University-review-analysis#6--inference-and-university-problem-analysis)
 
-7. [**[In Progress] Semantic Search**](https://github.com/SemdiankinaHalyna/University-review-analysis#7-semantic-search)
+7. [**[In Progress]Semantic Recommendations**](https://github.com/SemdiankinaHalyna/University-review-analysis#7--semantic-recommendations)
+
+8. [**[In Progress] Semantic Search**](https://github.com/SemdiankinaHalyna/University-review-analysis#7-semantic-search)
 
    
 
@@ -187,7 +189,7 @@ A heatmap was created to visualize sentiment dynamics over the years. The chart 
 
 ![Heat Map](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Heat_Map.png))
  
-## 5. 📂 Problem Classification Model
+## 5. 📂 Training Classification Model
 
 To build the **classification model**, **510 negative student reviews** about universities were **manually labeled**.
 
@@ -258,11 +260,15 @@ The problem categories are:
 Overall, the **hybrid model** demonstrates **robust generalization** across categories and provides a **strong baseline** for further refinement.
 
 
+## 6. 📊 Inference and University Problem Analysis
+
+Using the trained multi-label classification model to perform **inference on new reviews**  
+and **analyze key problem categories** across different universities.
 
 
-## 6. 🤝 Semantic Recommendations
+## 7. 🤝 Semantic Recommendations
 
-## 7. 📖 Semantic Search
+## 8. 📖 Semantic Search
 
 ## 🛠 Technologies 
 - Python
