@@ -147,7 +147,7 @@ To address **class imbalance** among categories, data augmentation was applied:
 
 ![Distribution of review counts over time](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Years.png)
 
-The chart shows how the number of reviews changed over time. User activity peaked between 2017 and 2021, likely reflecting a growing interest in education quality discussions
+The chart shows how the number of reviews changed over time. **User activity** peaked **between 2017 and 2021**, likely reflecting a growing interest in education quality discussions
 
  **Built distribution and density plots to analyze users’ tendency toward positive or negative reviews.**
  
@@ -163,30 +163,49 @@ The chart shows how the number of reviews changed over time. User activity peake
 ![Avarage_Rating](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Avarage_Rating.png)
 
 ## 4. 🤖 Sentiment Analysis with BERT
-Using Hugging Face Transformers (BERT), the sentiment of each review was determined and stored in a separate column. The BERT output was converted into categorical labels: negative / neutral / positive.
-Compared BERT-predicted sentiment with star ratings.
-Calculated agreement metrics (accuracy and confusion matrix). The overall agreement between star ratings and BERT sentiment was 73.31%.
+### Sentiment Analysis
+
+Using **Hugging Face Transformers (BERT)**, the sentiment of each review was analyzed and stored in a separate column.  
+The **BERT output** was converted into categorical labels:
+
+- 🟥 **Negative**  
+- 🟨 **Neutral**  
+- 🟩 **Positive**
+
+To evaluate model consistency, **BERT-predicted sentiment** was compared with the **original star ratings**.  
+Agreement metrics were calculated, including **accuracy** and a **confusion matrix**.
+
+**Overall agreement:** **73.31%** between star ratings and BERT-predicted sentiment.
+
 
 ![Confusion Matrix](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Confusion_Matrix.png)
 
-Confusion matrix results:
+### Confusion Matrix Results
 
-- BERT performs fairly well at predicting positive reviews — 2,687 matches out of 3,533 (≈76%).
+- 🟩 **Positive reviews:**  
+  BERT performs fairly well at predicting positive sentiment — **2,687 matches out of 3,533** (≈**76%**).
 
-- Negative reviews also show good alignment — 1,866 matches out of 2,329 (≈80%).
+- 🟥 **Negative reviews:**  
+  Also show good alignment — **1,866 matches out of 2,329** (≈**80%**).
 
-- The biggest confusion is with positive ratings that BERT classified as negative — 664 cases (≈19% of all positive ratings).
+- ⚠️ **Misclassified positives:**  
+  The biggest confusion occurs with **positive ratings** that BERT classified as **negative** — **664 cases** (≈**19%** of all positive ratings).
 
-- Neutral sentiment has the lowest accuracy and the fewest examples — which is expected, as it is the most ambiguous category.
-  
-An analysis of the mismatched reviews showed that discrepancies arose either due to BERT misclassification or the nature of the review itself — presence of irony/sarcasm, or subjective ambiguity (neutral or mixed opinions that are hard to classify clearly).
-Therefore, for determining the overall sentiment of a university, only the reviews where BERT sentiment matched the star rating (73.31% of all reviews) were retained, ensuring that the sentiment score is reliable and trustworthy.
+- 🟨 **Neutral reviews:**  
+  Have the **lowest accuracy** and the **fewest examples**, which is expected since this category is the most ambiguous.
 
-A thorough filtering was performed: for the final analysis, only reviews where the star rating matched the predicted sentiment were used — this approach helps reduce error.
-The loss of a portion of reviews (~27%) did not have a critical impact: the analysis showed that these excluded reviews were evenly distributed across years and universities.
+### Handling Mismatched Reviews
 
-I assigned sentiment index values (negative: -1, neutral: 0, positive: 1)(this allowed us to work with sentiment as a numeric score) and calculated the average sentiment score for each university.
-A heatmap was created to visualize sentiment dynamics over the years. The chart revealed that most universities had predominantly positive sentiment up until 2014–2015, after which sentiment began to decline in more than half of them
+An analysis of mismatched reviews showed that discrepancies arose due to either **BERT misclassification** or the nature of the review itself, such as:  
+- Presence of **irony or sarcasm**  
+- Subjective ambiguity (neutral or mixed opinions that are hard to classify clearly)
+
+To ensure reliable sentiment scores, only reviews where **BERT sentiment matched the star rating** (**73.31% of all reviews**) were retained for determining the overall sentiment of a university.
+
+A thorough filtering was performed:  
+- For the final analysis, only reviews with matching star ratings and predicted sentiment were used  
+- This approach reduces classification errors  
+- The loss of approximately **27% of reviews** did not critically affect the results, as the excluded reviews were **evenly distributed across years and universities**
 
 ![Heat Map](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Heat_Map.png)
  
