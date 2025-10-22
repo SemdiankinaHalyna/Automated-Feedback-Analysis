@@ -208,6 +208,20 @@ A thorough filtering was performed:
 - The loss of approximately **27% of reviews** did not critically affect the results, as the excluded reviews were **evenly distributed across years and universities**
 
 ![Heat Map](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Heat_Map.png)
+### Sentiment Scoring and Visualization
+
+To quantify sentiment, **sentiment index values** were assigned:  
+- 🟥 **Negative:** -1  
+- 🟨 **Neutral:** 0  
+- 🟩 **Positive:** 1  
+
+This allowed sentiment to be treated as a **numeric score**, enabling further analysis.  
+The **average sentiment score** was calculated for each university.
+
+A **heatmap** was created to visualize sentiment dynamics over the years.  
+- Most universities showed **predominantly positive sentiment** up until 2014–2015  
+- After 2014–2015, sentiment **began to decline** in more than half of the universities
+
  
 ## 5. 📂 Training Classification Model
 
