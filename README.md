@@ -144,20 +144,21 @@ To address **class imbalance** among categories, data augmentation was applied:
 
 
 ## 3. 📊 Exploratory Data Analysis (EDA)
-A plot of the distribution of review counts over time was created. The highest user activity was observed during 2017–2021, which may indicate an increased interest in discussing the quality of education during this period
 
 ![Distribution of review counts over time](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Years.png)
 
- Built distribution and density plots to analyze the tendency towards positive/negative reviews
+The chart shows how the number of reviews changed over time. User activity peaked between 2017 and 2021, likely reflecting a growing interest in education quality discussions
+
+ **Built distribution and density plots to analyze users’ tendency toward positive or negative reviews.**
  
  ![CDF](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/PDF.png)
 
-- 0.56% of reviews have high ratings
-- 0.07% of reviews have neutral ratings
-- 0.37% of reviews have low ratings
+
 ![CDF](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/CDF.png)
 
-The top 10 universities with the highest average rating were selected, calculated as the arithmetic mean of user star ratings
+- **56%** of reviews have **high** ratings
+- **7%** of reviews have **neutral** ratings
+- **37%** of reviews have **low** ratings
 
 ![Avarage_Rating](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Avarage_Rating.png)
 
