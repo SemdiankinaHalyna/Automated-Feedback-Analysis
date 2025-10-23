@@ -345,13 +345,19 @@ and **analyze key problem categories** across different universities [Inference 
 ## 8. 📖 Semantic Search
 
 ## 🛠 Technologies 
-- Python
-- Jupyter Notebook
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Hugging Face Transformers (Bert)
-- Scikit-learn
-- PyTorch
+
+**Data Collection & Processing:**  
+`Selenium`, `BeautifulSoup`, `Pandas`, `NumPy`, `langdetect`, `re`, `stanza`, `pymorphy2`,  
+`collections.Counter`, `PyTorch`, `transformers (MarianMTModel, MarianTokenizer)`
+
+**Machine Learning & NLP:**  
+`PyTorch`, `Scikit-learn (Logistic Regression, TF-IDF Vectorizer)`,  
+`Sentence Transformers (SBERT — sentence-transformers/paraphrase-multilingual-mpnet-base-v2)`,  
+`Transformers / Hugging Face (BertTokenizer, BertForSequenceClassification, nlptown/bert-base-multilingual-uncased-sentiment)`,  
+`SciPy`, `OS`, `Joblib`
+
+**Visualization & Clustering:**  
+`Matplotlib`, `Seaborn`, `Plotly`, `NetworkX`, `UMAP`, `WordCloud`,  
+`K-means`, `HDBSCAN`, `BERTopic`
+
 
