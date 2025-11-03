@@ -12,7 +12,7 @@ In this project, I analyzed open feedback from students and graduates to identif
 
 2. **Identify Key University Issues**  
    - **Perform multi-label classification** to detect major issues highlighted in reviews.  
-   - **Approach:** **TF-IDF + fine-tuned embeddings** (`sentence-transformers/paraphrase-multilingual-mpnet-base-v2`) with **logistic regression**.  
+   - **Approach:** **TF-IDF and fine-tuned embeddings** (`sentence-transformers/paraphrase-multilingual-mpnet-base-v2`) with **logistic regression**.  
    - **Goal:** Extract **actionable insights** about university performance and student concerns.
      
 3.  To examine **language trends** in student reviews  
@@ -241,16 +241,21 @@ The problem categories are:
 
 ## 🧠 ML Pipeline Overview
 
-1. **Load necessary libraries**
-2. **Load datasets** – datasets were **pre-cleaned and pre-processed**  
-3. **Label-based fine-tuning of Transformer model**  
-   (`sentence-transformers/paraphrase-multilingual-mpnet-base-v2`)  
+### 1. 📦 Load Necessary Libraries  
+Import all required Python packages for data processing, model training, and evaluation.
 
-### Block 1: Train on Fine-Tuned Embeddings Only
+### 2. 📂 Load Datasets 
+Datasets were **pre-cleaned and pre-processed**:  
+- `train_df` — labeled data for training  
+- `val_df` — labeled data for validation (hyperparameter tuning)  
+- `test_df` — labeled data for final evaluation  
+- `unlabeled_df` — unlabeled data for inference
 
-- **Grid Search** for hyperparameter tuning using cross-validation  
-- **Train Logistic Regression** on **fine-tuned embeddings** (`sentence-transformers/paraphrase-multilingual-mpnet-base-v2`) using  
-  `OneVsRestClassifier(LogisticRegression())`  
+### 3: Train on TF-IDF
+- **Feature Engineering** (Text vectorization using TF-IDF, n-grams and feature selection)
+- **Grid Search** for hyperparameter tuning using cross-validation (`min_df`, `C`, `l1_ratio`)
+- Train a **One-vs-Rest Logistic Regression classifier** on TF-IDF features (`OneVsRestClassifier(LogisticRegression())`)
+- **Threshold Optimization** 
 - **Evaluate model** with metrics:  
   - Precision  
   - Recall  
@@ -258,13 +263,16 @@ The problem categories are:
   - Micro average  
   - Macro average  
   - Weighted average  
-  - Samples average  
+  - Samples average 
 
-### Block 2: Train on Fine-Tuned Embeddings + TF-IDF
-
-- **Grid Search** for hyperparameter tuning using cross-validation  
-- **Train Logistic Regression** on **fine-tuned embeddings + TF-IDF** (`sentence-transformers/paraphrase-multilingual-mpnet-base-v2`) using  
-  `OneVsRestClassifier(LogisticRegression())`  
+### 4: Train on Embedding
+- Modeling (**Label-based fine-tuning of Transformer model** (`sentence-transformers/paraphrase-multilingual-mpnet-base-v2`))
+- **Feature Extraction** (fine-tuned sentence-transformers/paraphrase-multilingual-mpnet-base-v2`)  
+- **Feature Engineering** (VarianceThreshold) 
+- **Grid Search** for hyperparameter tuning using cross-validation (`C`, `l1_ratio` and feature thresholds)
+- Train a **One-vs-Rest Logistic Regression classifier** on sentence embeddings  
+  (`OneVsRestClassifier(LogisticRegression())`)
+- **Threshold Optimization** 
 - **Evaluate model** with metrics:  
   - Precision  
   - Recall  
@@ -272,9 +280,10 @@ The problem categories are:
   - Micro average  
   - Macro average  
   - Weighted average  
-  - Samples average  
+  - Samples average
+    
 
-**Model selection:** Evaluate performance and choose the best model based on metrics [Training Code](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/NLP_files/training_model_.ipynb)
+### 5. **Model selection**: Evaluate performance and choose the best model based on metrics [Training Code](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/NLP_files/training_model_.ipynb)
 
 
 
