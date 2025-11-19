@@ -49,7 +49,7 @@ In this project, I analyzed open feedback from students and graduates to identif
 ## 📝 Project Structure
 1. [**Data Collection**](https://github.com/SemdiankinaHalyna/University-review-analysis#1--data-collection)
    
-2. [**Preprocessing**](https://github.com/SemdiankinaHalyna/University-review-analysis#2-preprocessing)
+2. [**Preprocessing**](https://github.com/SemdiankinaHalyna/University-review-analysis#2--preprocessing)
 
 3. [**EDA**](https://github.com/SemdiankinaHalyna/University-review-analysis#3--exploratory-data-analysis-eda)
 
