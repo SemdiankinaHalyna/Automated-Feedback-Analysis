@@ -82,7 +82,7 @@ Key steps:
 - Processed HTML to extract structured data.
 - Saved results to .txt files for further processing.
 
-## 2. Preprocessing ⚙️
+## 2. ⚙ Preprocessing️
 
 ### 1️⃣ Initial Data Preparation 🌐
 - Collected reviews from all sources were **merged into a single DataFrame**.  
