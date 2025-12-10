@@ -414,20 +414,13 @@ Datasets were **pre-cleaned and pre-processed**:
 
 ## 🧩 **Conclusion**
 
-> **💡 Note:**  
-> Training on the **hybrid feature set** combining *TF-IDF* and *SentenceTransformer embeddings*  
-> yields **better performance** than training on **embeddings alone**.
+The goal of this study was to compare three approaches for multi-label text classification: **TF-IDF with Logistic Regression**, **Sentence-Transformers embeddings with Logistic Regression**, and **RoBERTa fine-tuning**.  
 
-- **Hybrid model** achieves **Micro F1 ≈ 0.72** and **Macro F1 ≈ 0.72**  
-- **Embeddings only:** Micro F1 ≈ 0.72, Macro F1 ≈ 0.71  
+- **TF-IDF** provided a strong baseline, especially for general topics, but struggled with the class **Attitude_Towards_Students**, likely due to its reliance on surface-level n-gram features.  
+- **Sentence-Transformers** improved the capture of semantic relationships and contextual meaning, leading to better overall performance, yet **Attitude_Towards_Students** remained a challenging class.  
+- **RoBERTa fine-tuning** achieved the best performance across most classes, including **Attitude_Towards_Students**. This improvement is likely due to the model's pretraining on Facebook-related datasets, which contain similar types of text discussing opinions and attitudes. As a result, RoBERTa is better able to capture nuanced expressions of sentiment and stance in this category.  
 
-**Category-level insights:**
-- **Academic_Process_Management:** notable improvement — F1-score increased from **0.62 → 0.71**  
-- **Attitude_Towards_Students:** remains the most challenging category (**F1 ≈ 0.60**).  
-  This category includes **diverse linguistic expressions** and shows **complex semantic overlap** with other problem types.  
-  Further improvement may require applying **more advanced architectures such as LLM-based models** capable of deeper contextual understanding.
-
-Overall, the **hybrid model** demonstrates **robust generalization** across categories and provides a **strong baseline** for further refinement.
+Overall, **RoBERTa demonstrated the highest quality predictions**, particularly for classes that require understanding of subtle attitudes and opinions, making it the preferred model for this multi-label classification task.  
 
 ## 6. 📊 Inference and University Problem Analysis
 
