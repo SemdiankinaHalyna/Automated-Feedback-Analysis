@@ -251,37 +251,162 @@ Datasets were **pre-cleaned and pre-processed**:
 - `test_df` — labeled data for final evaluation  
 - `unlabeled_df` — unlabeled data for inference
 
-### 3: Train on TF-IDF
-- **Feature Engineering** (Text vectorization using TF-IDF, n-grams and feature selection)
-- **Grid Search** for hyperparameter tuning using cross-validation (`min_df`, `C`, `l1_ratio`)
-- Train a **One-vs-Rest Logistic Regression classifier** on TF-IDF features (`OneVsRestClassifier(LogisticRegression())`)
-- **Threshold Optimization** 
-- **Evaluate model** with metrics:  
-  - Precision  
-  - Recall  
-  - F1-score  
-  - Micro average  
-  - Macro average  
-  - Weighted average  
-  - Samples average 
+### 3. TF-IDF Pipeline
 
-### 4: Train on Embedding
-- Modeling (**Label-based fine-tuning of Transformer model** (`sentence-transformers/paraphrase-multilingual-mpnet-base-v2`))
-- **Feature Extraction** (fine-tuned sentence-transformers/paraphrase-multilingual-mpnet-base-v2`)  
-- **Feature Engineering** (VarianceThreshold) 
-- **Grid Search** for hyperparameter tuning using cross-validation (`C`, `l1_ratio` and feature thresholds)
-- Train a **One-vs-Rest Logistic Regression classifier** on sentence embeddings  
-  (`OneVsRestClassifier(LogisticRegression())`)
-- **Threshold Optimization** 
-- **Evaluate model** with metrics:  
-  - Precision  
-  - Recall  
-  - F1-score  
-  - Micro average  
-  - Macro average  
-  - Weighted average  
-  - Samples average
-    
+1. **Feature Extraction**  
+   - Vectorized text using TF-IDF with n-grams.  
+   - Applied feature selection to remove uninformative features.  
+
+2. **Model Training**  
+   - Trained a `One-vs-Rest Logistic Regression` classifier (`OneVsRestClassifier(LogisticRegression)`) on TF-IDF features.  
+   - Performed hyperparameter tuning with cross-validation (`min_df`, `C`, `l1_ratio`).  
+
+3. **Threshold Optimization**  
+   - Optimized decision thresholds per class to maximize F1-score.  
+
+4. **Evaluation Metrics**  
+   - Precision, Recall, F1-score  
+   - Micro, Macro, Weighted, and Samples averages  
+
+5. **Example Metrics** (train/test)  
+
+**Train Set**
+
+| Class                         | Precision | Recall | F1-score | Support |
+|-------------------------------|----------|--------|----------|--------|
+| Attitude_Towards_Students     | 0.87     | 0.92   | 0.90     | 205    |
+| Campus_conditions             | 0.85     | 0.96   | 0.90     | 108    |
+| Corruption                     | 0.88     | 0.97   | 0.92     | 133    |
+| Academic_Process_Management    | 0.86     | 0.94   | 0.90     | 190    |
+| Education_Quality              | 0.83     | 0.95   | 0.88     | 184    |
+
+**Aggregated F1-scores:**  
+- Micro F1: 0.899  
+- Macro F1: 0.901  
+
+---
+
+**Test Set**
+
+| Class                         | Precision | Recall | F1-score | Support |
+|-------------------------------|----------|--------|----------|--------|
+| Attitude_Towards_Students     | 0.59     | 0.65   | 0.62     | 31     |
+| Campus_conditions             | 0.80     | 0.69   | 0.74     | 29     |
+| Corruption                     | 0.79     | 0.59   | 0.68     | 37     |
+| Academic_Process_Management    | 0.65     | 0.56   | 0.60     | 39     |
+| Education_Quality              | 0.80     | 0.65   | 0.72     | 57     |
+
+**Aggregated F1-scores:**  
+- Micro F1: 0.672  
+- Macro F1: 0.671  
+
+
+### 4. Sentence-Transformers Pipeline
+
+1. **Embeddings**  
+   - Fine-tuned `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` on the labeled dataset.  
+   - Extracted sentence embeddings for all texts.  
+
+2. **Feature Engineering**  
+   - Applied `VarianceThreshold` to remove low-variance features.  
+
+3. **Model Training**  
+   - Trained a `One-vs-Rest Logistic Regression` classifier (`OneVsRestClassifier(LogisticRegression)`) on sentence embeddings.  
+   - Performed hyperparameter tuning using cross-validation (`C`, `l1_ratio`, feature thresholds).  
+
+4. **Threshold Optimization**  
+   - Optimized decision thresholds per class to maximize F1-score.  
+
+5. **Evaluation Metrics**  
+   - Precision, Recall, F1-score  
+   - Micro, Macro, Weighted, and Samples averages  
+
+6. **Example Metrics** (train/test)  
+
+**Train Set**
+
+| Class                         | Precision | Recall | F1-score | Support |
+|-------------------------------|----------|--------|----------|--------|
+| Attitude_Towards_Students     | 0.74     | 0.79   | 0.76     | 205    |
+| Campus_conditions             | 0.68     | 0.85   | 0.76     | 108    |
+| Corruption                     | 0.71     | 0.86   | 0.78     | 133    |
+| Academic_Process_Management    | 0.73     | 0.81   | 0.76     | 190    |
+| Education_Quality              | 0.68     | 0.84   | 0.75     | 184    |
+
+**Aggregated F1-scores:**  
+- Micro F1: 0.762  
+- Macro F1: 0.762  
+
+---
+
+**Test Set**
+
+| Class                         | Precision | Recall | F1-score | Support |
+|-------------------------------|----------|--------|----------|--------|
+| Attitude_Towards_Students     | 0.63     | 0.61   | 0.62     | 31     |
+| Campus_conditions             | 0.71     | 0.76   | 0.73     | 29     |
+| Corruption                     | 0.79     | 0.70   | 0.74     | 37     |
+| Academic_Process_Management    | 0.63     | 0.82   | 0.71     | 39     |
+| Education_Quality              | 0.79     | 0.77   | 0.78     | 57     |
+
+**Aggregated F1-scores:**  
+- Micro F1: 0.726  
+- Macro F1: 0.718  
+
+  
+---
+
+### 5. RoBERTa / Transformer Pipeline
+
+1. **Model Setup**  
+- Used `xlm-roberta-base` pre-trained Transformer for multi-label classification.  
+- Added classification head with `num_labels` equal to the number of target classes.  
+- Froze the first 6 Transformer layers to reduce overfitting.  
+
+2. **Loss & Optimization**  
+- Used `BCEWithLogitsLoss` with class weights to handle label imbalance.  
+- Optimized with `AdamW` and applied gradient clipping for stable training.  
+
+3. **Training**  
+- Trained the model for multiple epochs on the training dataset.  
+- Batch size = 8, learning rate = 1e-5.  
+
+4. **Predictions & Evaluation**  
+- Predicted labels using fixed threshold = 0.5.  
+- Evaluated with Precision, Recall, F1-score (Micro, Macro, Weighted, Samples averages).  
+
+5. **Example Metrics** (train/test)  
+
+**Train Set**
+
+| Class                         | Precision | Recall | F1-score | Support |
+|-------------------------------|----------|--------|----------|--------|
+| Attitude_Towards_Students     | 0.88     | 0.82   | 0.85     | 205    |
+| Campus_conditions             | 0.89     | 0.95   | 0.92     | 108    |
+| Corruption                     | 0.61     | 0.89   | 0.72     | 133    |
+| Academic_Process_Management    | 0.84     | 0.82   | 0.83     | 190    |
+| Education_Quality              | 0.73     | 0.84   | 0.78     | 184    |
+
+**Aggregated F1-scores:**  
+- Micro F1: 0.816  
+- Macro F1: 0.822  
+
+---
+
+**Test Set**
+
+| Class                         | Precision | Recall | F1-score | Support |
+|-------------------------------|----------|--------|----------|--------|
+| Attitude_Towards_Students     | 0.81     | 0.71   | 0.76     | 31     |
+| Campus_conditions             | 0.73     | 0.93   | 0.82     | 29     |
+| Corruption                     | 0.62     | 0.76   | 0.68     | 37     |
+| Academic_Process_Management    | 0.61     | 0.64   | 0.62     | 39     |
+| Education_Quality              | 0.82     | 0.72   | 0.77     | 57     |
+
+**Aggregated F1-scores:**  
+- Micro F1: 0.728  
+- Macro F1: 0.730  
+
 
 ### 5. **Model selection**: Evaluate performance and choose the best model based on metrics [Training Code](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/NLP_files/training_model_.ipynb)
 
