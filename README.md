@@ -1,33 +1,34 @@
 # University Review Intelligence System
 
-### 📘 Project Overview
+## 📘 Project Overview
 
 An end-to-end NLP system that transforms unstructured student reviews into structured insights for universities, applicants, and decision-makers.
 
 The system automatically analyzes sentiment, detects key issues, tracks language trends, and enables semantic search and recommendation of similar reviews.
 
-### 🎯 Project Goal
 
-1. **Sentiment Analysis of Reviews**  
-   - **Analyze student reviews** by combining **star ratings** with **text sentiment** using a pre-trained BERT model: `nlptown/bert-base-multilingual-uncased-sentiment`.  
-   - **Goal:** Automatically classify reviews as **positive, neutral, or negative**.
+## 🚀 Key Features
 
-2. **Identify Key University Issues**  
-   - **Perform multi-label classification** to detect major issues highlighted in reviews.  
-   - **Approach:** **TF-IDF and fine-tuned embeddings** (`sentence-transformers/paraphrase-multilingual-mpnet-base-v2`) with **logistic regression**.  
-   - **Goal:** Extract **actionable insights** about university performance and student concerns.
-     
-3.  To examine **language trends** in student reviews  
-   — to determine **which language (Ukrainian or Russian) predominates** (using *langdetect*)  
-   — and how the **linguistic distribution has changed over time** (visualized with a **heatmap**).
+### Sentiment Analysis
+Automatically classifies student reviews as positive, neutral, or negative by combining star ratings with text-based sentiment models.
 
-4. **Find Like-Minded Reviews (Semantic Recommendations)**  
-   - **After a user submits a review**, the system uses **NLP embeddings** to identify the **top-5 semantically similar reviews**, helping users connect with others who share similar opinions.
+### Issue Detection & Topic Analysis
+Categorizes reviews into key topics (Attitude Towards Students, Campus Conditions, Corruption, Academic Process Management, Education Quality) and tracks the prevalence of negative feedback to highlight the most pressing university issues.
 
-5. **Search Relevant Reviews (Semantic Search)**  
-   - **Users can input a query**, and the system leverages **semantic search** to retrieve the **most relevant reviews** matching the query.
+### Language Trend Analytics
+Detects language trends in reviews (Ukrainian / Russian) and visualizes how their distribution changes over time.
 
----
+### Similar Review Recommendation
+After a user submits a review, the system retrieves the top-5 semantically similar reviews to help users explore shared experiences.
+
+### Semantic Search
+Allows users to search reviews using natural language queries and retrieves the most relevant results using embedding-based search.
+
+### REST API Prototype (in progress)
+A FastAPI-based inference service for real-time review analysis and insight generation.
+
+### Database Integration (in progress)
+Stores processed reviews and model outputs to support dashboards, analytics, and future product features
 
 **Note:**  
 **This project is intended solely for educational and research purposes** and does not represent any official evaluation or ranking of the institutions.  
