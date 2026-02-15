@@ -1,8 +1,10 @@
-# NLP_Analysis_of_University_Reviews
+# University Review Intelligence System
 
 ### 📘 Project Overview
 
-In this project, I analyzed open feedback from students and graduates to identify key issues of universities and explore the dynamics of their reputation. Using **NLP techniques**, the project combines **sentiment analysis, multi-label classification, and semantic search** to extract insights from **review content**, **star ratings**, and **textual feedback**.
+An end-to-end NLP system that transforms unstructured student reviews into structured insights for universities, applicants, and decision-makers.
+
+The system automatically analyzes sentiment, detects key issues, tracks language trends, and enables semantic search and recommendation of similar reviews.
 
 ### 🎯 Project Goal
 
