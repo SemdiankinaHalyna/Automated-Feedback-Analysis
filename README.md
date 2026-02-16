@@ -54,7 +54,7 @@ Stores processed reviews and model outputs to support dashboards, analytics, and
    
 2. [**Preprocessing**](https://github.com/SemdiankinaHalyna/University-review-analysis#2--preprocessing)
 
-3. [**EDA**](https://github.com/SemdiankinaHalyna/University-review-analysis#3--exploratory-data-analysis-eda)
+3. [**EDA**](https://github.com/SemdiankinaHalyna/University-review-analysis#3-exploratory-data-analysis-eda)
 
 4. [**Sentiment Analysis with BERT**](https://github.com/SemdiankinaHalyna/University-review-analysis#4--sentiment-analysis-with-bert)
 
