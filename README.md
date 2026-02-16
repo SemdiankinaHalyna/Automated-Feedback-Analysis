@@ -62,10 +62,13 @@ Stores processed reviews and model outputs to support dashboards, analytics, and
 
 6. [**Inference and University Problem Analysis**](https://github.com/SemdiankinaHalyna/University-review-analysis#6--inference-and-university-problem-analysis)
 
-7. [**[In Progress]Semantic Recommendations**](https://github.com/SemdiankinaHalyna/University-review-analysis#7--semantic-recommendations)
+7. [**Semantic Recommendations**](https://github.com/SemdiankinaHalyna/University-review-analysis#7--semantic-recommendations)
 
-8. [**[In Progress]Semantic Search**](https://github.com/SemdiankinaHalyna/University-review-analysis#8--semantic-search)
-
+8. [**Semantic Search**](https://github.com/SemdiankinaHalyna/University-review-analysis#8--semantic-search)
+   
+9. [**REST API Prototype (in progress)**](https://github.com/SemdiankinaHalyna/University-review-analysis#9--rest-api-prototype)
+    
+10. [**Database Integration (in progress)**](https://github.com/SemdiankinaHalyna/University-review-analysis#10--database-integration)
    
 
 
@@ -472,7 +475,11 @@ and **analyze key problem categories** across different universities [Inference 
   
 ## 7. 🤝 Semantic Recommendations
 
+After a user submits a review, the system retrieves the top-5 semantically similar reviews to help users explore shared experiences.
+
 ## 8. 📖 Semantic Search
+
+Allows users to search reviews using natural language queries and retrieves the most relevant results using embedding-based search.
 
 ## 🛠 Technologies 
 
