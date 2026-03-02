@@ -24,7 +24,7 @@ After a user submits a review, the system retrieves the top-5 semantically simil
 ### Semantic Search
 Allows users to search reviews using natural language queries and retrieves the most relevant results using embedding-based search.
 
-### REST API Prototype (in progress)
+### Fast API Prototype (in progress)
 A FastAPI-based inference service for real-time review analysis and insight generation.
 
 ### Database Integration (in progress)
