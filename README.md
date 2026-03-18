@@ -6,34 +6,9 @@ An end-to-end NLP system that transforms unstructured student reviews into struc
 
 The system automatically analyzes sentiment, detects key issues, tracks language trends, and enables semantic search and recommendation of similar reviews.
 
-
-## 🚀 Key Features
-
-### Sentiment Analysis
-Automatically classifies student reviews as positive, neutral, or negative by combining star ratings with text-based sentiment models.
-
-### Issue Detection & Topic Analysis
-Categorizes reviews into key topics (Attitude Towards Students, Campus Conditions, Corruption, Academic Process Management, Education Quality) and tracks the prevalence of negative feedback to highlight the most pressing university issues.
-
-### Language Trend Analytics
-Detects language trends in reviews (Ukrainian / Russian) and visualizes how their distribution changes over time.
-
-### Similar Review Recommendation
-After a user submits a review, the system retrieves the top-5 semantically similar reviews to help users explore shared experiences.
-
-### Semantic Search
-Allows users to search reviews using natural language queries and retrieves the most relevant results using embedding-based search.
-
-### Fast API Prototype (in progress)
-A FastAPI-based inference service for real-time review analysis and insight generation.
-
-### Database Integration (in progress)
-Stores processed reviews and model outputs to support dashboards, analytics, and future product features
-
 **Note:**  
 **This project is intended solely for educational and research purposes** and does not represent any official evaluation or ranking of the institutions.  
 **For privacy reasons, the universities are anonymized** and referred to by numbers (e.g., University_1, University_2).
-
 
 ## 📋 Data Description:
 
