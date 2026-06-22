@@ -123,17 +123,23 @@ The model was evaluated using:
 
 ## 📊 Visualizations
 
-### Sentiment Distribution
+### 📉 Class Imbalance
 
-![Sentiment Distribution](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/sentimet_distribution.png)
+Shows distribution of sentiment and issue categories.
 
-### Issue Frequency
+![Class Imbalance](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/sentimet_distribution.png)
 
-![Issue Frequency](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/imagesissue_frequency.png)
+### 🎯 Precision-Recall Curve
 
-### University-Level Analysis
+Evaluates model performance across different thresholds.
 
-![University Analysis](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/university_analysis.png)
+![Precision-Recall Curve](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/sentimet_distribution.png)
+
+### 🧩 Confusion Matrix
+
+Shows which classes the model confuses most.
+
+![Confusion Matrix](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/sentimet_distribution.png)
 
 ---
 
@@ -152,6 +158,20 @@ The model was evaluated using:
 ![Academic Process Example](images/example_academic_process.png)
 
 ---
+
+### Sentiment Distribution
+
+![Sentiment Distribution](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/sentimet_distribution.png)
+
+### Issue Frequency
+
+![Issue Frequency](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/imagesissue_frequency.png)
+
+### University-Level Analysis
+
+![University Analysis](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/university_analysis.png)
+
+
 
 ## Technologies
 
