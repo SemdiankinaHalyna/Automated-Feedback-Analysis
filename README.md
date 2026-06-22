@@ -1,5 +1,10 @@
 # University Reviews Analysis and Issue Detection
 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![ML](https://img.shields.io/badge/Machine%20Learning-NLP-orange)
+![Status](https://img.shields.io/badge/Status-Completed-green)
+![Model](https://img.shields.io/badge/Model-Multi--Label%20Classification-purple)
+
 ## 📘 Project Overview
 
 This project analyzes student reviews of Ukrainian universities using Natural Language Processing (NLP).
