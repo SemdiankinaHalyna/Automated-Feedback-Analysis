@@ -133,7 +133,7 @@ Shows distribution of sentiment and issue categories.
 
 Evaluates model performance across different thresholds.
 
-![Precision-Recall Curve](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/sentimet_distribution.png)
+![Precision-Recall Curve](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/precision_recall_curve.png)
 
 ### 🧩 Confusion Matrix
 
