@@ -145,7 +145,7 @@ Shows which classes the model confuses most.
 
 ## Random prediction examples
 
-![Education Quality Example](images/example_education_quality.png)
+![Random prediction examples](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/random%20prediction%20examples.png)
 
 ---
 
