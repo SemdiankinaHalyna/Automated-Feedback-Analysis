@@ -139,7 +139,7 @@ Evaluates model performance across different thresholds.
 
 Shows which classes the model confuses most.
 
-![Confusion Matrix](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/sentimet_distribution.png)
+![Confusion Matrix](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/confusion_matrix.png)
 
 ---
 
