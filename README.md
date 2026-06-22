@@ -149,7 +149,10 @@ Shows which classes the model confuses most.
 
 ---
 
+## 📊 Data Insights
+
 ### Sentiment Distribution
+Distribution of review sentiments across the dataset (positive, neutral, negative).
 
 ![Sentiment Distribution](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/sentimet_distribution.png)
 
