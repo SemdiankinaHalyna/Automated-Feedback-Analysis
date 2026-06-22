@@ -36,37 +36,37 @@ Detected issue categories:
 - Review Rating
 - Review Text
 
-## Project Workflow
+## 🔁 Project Workflow
 
-### 1. Data Collection
+### 1. Data Collection 🌐
 
 University reviews were collected from public online sources.
 
-### 2. Data Preparation
+### 2. Data Preparation 🧹
 
 The reviews were cleaned, filtered, and prepared for analysis.
 
-### 3. Topic Identification
+### 3. Topic Identification 🔍
 
 Clustering and topic modeling techniques (K-Means, DBSCAN, UMAP, and BERTopic) were used to explore recurring themes in student reviews.
 
 The discovered patterns helped define the final issue categories, which were then manually annotated and used to train the multi-label classification model.
 
-### 4. Text Embeddings
+### 4. Text Embeddings 🤖
 
 Each review was converted into a numerical representation using multilingual sentence embeddings:
 
 `paraphrase-multilingual-mpnet-base-v2`
 
-### 5. Multi-label Classification
+### 5. Multi-label Classification 🧠
 
 A One-vs-Rest Logistic Regression model predicts which issues are mentioned in a review.
 
-### 6. Threshold Optimization
+### 6. Threshold Optimization 🎯
 
 Class-specific thresholds were optimized using Out-of-Fold (OOF) validation predictions to improve issue detection performance.
 
-### 7. Review Analysis
+### 7. Review Analysis 📊
 
 Applied the trained model to unlabeled reviews to extract insights on sentiment distribution, issue frequency, and university-level patterns.
 
@@ -74,7 +74,7 @@ Built an interactive Excel dashboard (Pivot Tables, Pivot Charts, slicers) to vi
 
 ---
 
-## Model Pipeline
+## 🧾 Model Pipeline
 
 ```text
 Review Text
@@ -94,7 +94,7 @@ Analytical Excel Dashboard
 
 ---
 
-## Results
+## 📈 Results
 
 ### Validation Performance
 
@@ -103,7 +103,7 @@ Analytical Excel Dashboard
 | Micro-F1 | 79 |
 | Macro-F1 | 79 |
 
-### Error Analysis
+### 🔍 Error Analysis
 
 The model was evaluated using:
 
@@ -113,7 +113,7 @@ The model was evaluated using:
 
 ---
 
-## Visualizations
+## 📊 Visualizations
 
 ### Sentiment Distribution
 
