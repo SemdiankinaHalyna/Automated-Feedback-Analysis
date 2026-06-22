@@ -7,12 +7,15 @@
 
 ## 📘 Project Overview
 
-This project analyzes student reviews of Ukrainian universities using Natural Language Processing (NLP).
+This project analyzes student reviews of universities using **Natural Language Processing (NLP)** and machine learning.
 
-The system performs two tasks:
+It combines:
+- Sentiment analysis
+- Multi-label issue detection
+- Topic discovery via clustering
+- Model evaluation and error analysis
 
-- **Sentiment Classification** (Positive, Neutral, Negative)
-- **Multi-label Issue Classification** for negative reviews
+The goal is to understand **what problems students report most frequently and how they vary across universities**.
 
 Detected issue categories:
 
