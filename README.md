@@ -1,10 +1,23 @@
-# University Review Intelligence System
+# University Reviews Analysis and Issue Detection
 
 ## 📘 Project Overview
 
-An end-to-end NLP system that transforms unstructured student reviews into structured insights for universities, applicants, and decision-makers.
+This project analyzes student reviews of Ukrainian universities using Natural Language Processing (NLP).
 
-The system automatically analyzes sentiment, detects key issues, tracks language trends, and enables semantic search and recommendation of similar reviews.
+The system performs two tasks:
+
+- **Sentiment Classification** (Positive, Neutral, Negative)
+- **Multi-label Issue Classification** for negative reviews
+
+Detected issue categories:
+
+- Attitude Towards Students
+- Campus Conditions
+- Corruption
+- Academic Process Management
+- Education Quality
+
+---
 
 **Note:**  
 **This project is intended solely for educational and research purposes** and does not represent any official evaluation or ranking of the institutions.  
@@ -23,27 +36,134 @@ The system automatically analyzes sentiment, detects key issues, tracks language
 - Review Rating
 - Review Text
 
+## Project Workflow
 
-## 📝 Project Structure
-1. [**Data Collection**](https://github.com/SemdiankinaHalyna/University-review-analysis#1--data-collection)
-   
-2. [**Preprocessing**](https://github.com/SemdiankinaHalyna/University-review-analysis#2--preprocessing)
+### 1. Data Collection
 
-3. [**EDA**](#3-exploratory-data-analysis-eda)
+University reviews were collected from public online sources.
 
-4. [**Sentiment Analysis with BERT**](https://github.com/SemdiankinaHalyna/University-review-analysis#4--sentiment-analysis-with-bert)
+### 2. Data Preparation
 
-5. [**Training Classification Model**](https://github.com/SemdiankinaHalyna/University-review-analysis#5--training-classification-model)
+The reviews were cleaned, filtered, and prepared for analysis.
 
-6. [**Inference and University Problem Analysis**](https://github.com/SemdiankinaHalyna/University-review-analysis#6--inference-and-university-problem-analysis)
+### 3. Topic Identification
 
-7. [**Semantic Recommendations**](https://github.com/SemdiankinaHalyna/University-review-analysis#7--semantic-recommendations)
+Clustering and topic modeling techniques (K-Means, DBSCAN, UMAP, and BERTopic) were used to explore recurring themes in student reviews.
 
-8. [**Semantic Search**](https://github.com/SemdiankinaHalyna/University-review-analysis#8--semantic-search)
-   
-9. [**REST API Prototype (in progress)**](https://github.com/SemdiankinaHalyna/University-review-analysis#9--rest-api-prototype)
-    
-10. [**Database Integration (in progress)**](https://github.com/SemdiankinaHalyna/University-review-analysis#10--database-integration)
+The discovered patterns helped define the final issue categories, which were then manually annotated and used to train the multi-label classification model.
+
+### 4. Text Embeddings
+
+Each review was converted into a numerical representation using multilingual sentence embeddings:
+
+`paraphrase-multilingual-mpnet-base-v2`
+
+### 5. Multi-label Classification
+
+A One-vs-Rest Logistic Regression model predicts which issues are mentioned in a review.
+
+### 6. Threshold Optimization
+
+Class-specific thresholds were optimized using Out-of-Fold (OOF) validation predictions to improve issue detection performance.
+
+### 7. Review Analysis
+
+Applied the trained model to unlabeled reviews to extract insights on sentiment distribution, issue frequency, and university-level patterns.
+
+Built an interactive Excel dashboard (Pivot Tables, Pivot Charts, slicers) to visualize sentiment trends, issue categories, and temporal dynamics across universities.
+
+---
+
+## Model Pipeline
+
+```text
+Review Text
+    ↓
+Sentence Embeddings
+    ↓
+One-vs-Rest Logistic Regression
+    ↓
+Class Probabilities
+    ↓
+Threshold Optimization
+    ↓
+Predicted Issue Categories
+    ↓
+Analytical Excel Dashboard	
+```
+
+---
+
+## Results
+
+### Validation Performance
+
+| Metric | Score |
+|----------|----------|
+| Micro-F1 | 79 |
+| Macro-F1 | 79 |
+
+### Error Analysis
+
+The model was evaluated using:
+
+- Per-class confusion matrices
+- Pairwise class confusion analysis
+- Manual review of prediction examples
+
+---
+
+## Visualizations
+
+### Sentiment Distribution
+
+![Sentiment Distribution](images/sentiment_distribution.png)
+
+### Issue Frequency
+
+![Issue Frequency](images/issue_frequency.png)
+
+### University-Level Analysis
+
+![University Analysis](images/university_analysis.png)
+
+---
+
+## Example Predictions
+
+### Education Quality
+
+![Education Quality Example](images/example_education_quality.png)
+
+### Corruption
+
+![Corruption Example](images/example_corruption.png)
+
+### Academic Process Management
+
+![Academic Process Example](images/example_academic_process.png)
+
+---
+
+## Technologies
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Sentence Transformers
+- Matplotlib
+- Seaborn
+- Plotly
+
+---
+
+## Future Improvements
+
+- Increase the size of the labeled dataset
+- Experiment with transformer-based classifiers
+- Improve classification of overlapping issue categories
+- Develop an interactive dashboard for university comparison
    
 
 
