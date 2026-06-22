@@ -125,7 +125,7 @@ The model was evaluated using:
 
 ### University-Level Analysis
 
-![University Analysis](images/university_analysis.png)
+![University Analysis](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/university_analysis.png)
 
 ---
 
