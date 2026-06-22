@@ -117,7 +117,7 @@ The model was evaluated using:
 
 ### Sentiment Distribution
 
-![Sentiment Distribution](images/sentiment_distribution.png)
+![Sentiment Distribution](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/sentimet_distribution.png)
 
 ### Issue Frequency
 
