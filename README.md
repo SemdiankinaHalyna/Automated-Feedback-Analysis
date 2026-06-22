@@ -19,7 +19,7 @@ Detected issue categories:
 
 ---
 
-💡 **Note:**  
+💡  **Note:**  
 **This project is intended solely for educational and research purposes** and does not represent any official evaluation or ranking of the institutions.  
 **For privacy reasons, the universities are anonymized** and referred to by numbers (e.g., University_1, University_2).
 
