@@ -40,7 +40,7 @@ Detected issue categories:
 
 ### 1. Data Collection 🌐
 
-University reviews were collected from public online sources.
+University reviews were collected from public online sources using Selenium and BeautifulSoup.
 
 ### 2. Data Preparation 🧹
 
