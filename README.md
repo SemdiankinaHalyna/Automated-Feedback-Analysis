@@ -143,19 +143,9 @@ Shows which classes the model confuses most.
 
 ---
 
-## Example Predictions
-
-### Education Quality
+## Random prediction examples
 
 ![Education Quality Example](images/example_education_quality.png)
-
-### Corruption
-
-![Corruption Example](images/example_corruption.png)
-
-### Academic Process Management
-
-![Academic Process Example](images/example_academic_process.png)
 
 ---
 
