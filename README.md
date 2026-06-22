@@ -151,16 +151,18 @@ Shows which classes the model confuses most.
 
 ## 📊 Data Insights
 
-### Sentiment Distribution
+### Sentiment Distribution 
 Distribution of review sentiments across the dataset (positive, neutral, negative).
 
 ![Sentiment Distribution](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/sentimet_distribution.png)
 
-### Issue Frequency
+### Issue Frequency 📈
+Most common issue categories identified in student reviews.
 
 ![Issue Frequency](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/imagesissue_frequency.png)
 
-### University-Level Analysis
+### University-Level Analysis 🏫
+Differences in review patterns across universities.
 
 ![University Analysis](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/university_analysis.png)
 
