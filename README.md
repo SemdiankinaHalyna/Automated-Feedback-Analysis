@@ -127,7 +127,7 @@ The model was evaluated using:
 
 Shows distribution of sentiment and issue categories.
 
-![Class Imbalance](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/sentimet_distribution.png)
+![Class Imbalance](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/%D1%81lass_imbalance.png)
 
 ### 🎯 Precision-Recall Curve
 
