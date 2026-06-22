@@ -121,7 +121,7 @@ The model was evaluated using:
 
 ### Issue Frequency
 
-![Issue Frequency](images/issue_frequency.png)
+![Issue Frequency](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/imagesissue_frequency.png)
 
 ### University-Level Analysis
 
