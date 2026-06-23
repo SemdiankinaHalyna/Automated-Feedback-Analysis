@@ -151,20 +151,9 @@ Shows which classes the model confuses most.
 
 ## 📊 Analytical Excel Dashboard
 
-### Sentiment Distribution 
-Distribution of review sentiments across the dataset (positive, neutral, negative).
 
-![Sentiment Distribution](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/sentimet_distribution.png)
+![Analytical Excel Dashboard](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Dashboard.png)
 
-### Issue Frequency 📈
-Most common issue categories identified in student reviews.
-
-![Issue Frequency](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/imagesissue_frequency.png)
-
-### University-Level Analysis 🏫
-Differences in review patterns across universities.
-
-![University Analysis](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/university_analysis.png)
 
 ---
 
@@ -172,7 +161,7 @@ Differences in review patterns across universities.
 
 **Data Collection & Processing:**  
 `Selenium`, `BeautifulSoup`, `Pandas`, `NumPy`, `langdetect`, `re`, `stanza`, `pymorphy2`,  
-`collections.Counter`, `PyTorch`, `transformers (MarianMTModel, MarianTokenizer)`
+`collections.Counter`, `PyTorch`)`
 
 **Machine Learning & NLP:**  
 `PyTorch`, `Scikit-learn (Logistic Regression, TF-IDF Vectorizer)`,  
