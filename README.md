@@ -149,7 +149,7 @@ Shows which classes the model confuses most.
 
 ---
 
-## 📊 Data Insights
+## 📊 Analytical Excel Dashboard
 
 ### Sentiment Distribution 
 Distribution of review sentiments across the dataset (positive, neutral, negative).
