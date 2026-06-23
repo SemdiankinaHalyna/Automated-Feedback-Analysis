@@ -1,4 +1,4 @@
-# University Reviews Analysis and Issue Detection
+# University Reviews Analysis
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![ML](https://img.shields.io/badge/Machine%20Learning-NLP-orange)
