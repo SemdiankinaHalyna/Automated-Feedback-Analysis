@@ -53,100 +53,22 @@ The project follows a structured end-to-end pipeline for processing and analyzin
 - Issue categories identified (Attitude Towards Students, Campus Conditions, Corruption, Academic Process Management, Education Quality)
 - Developed a multi-label classification model for automatic issue detection (F1 micro = 0.79) and demonstrated reliable performance across major issue categories.
 - Built an interactive dashboard for monitoring sentiment, comparing universities and tracking issue trends.
-  
+
+### 📊 Analytical Excel Dashboard
 ![Analytical Excel Dashboard](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Dashboard.png)
 
-
-
-
-### 5. Multi-label Classification 🧠
-
-A One-vs-Rest Logistic Regression model predicts which issues are mentioned in a review.
-
-### 6. Threshold Optimization 🎯
-
-Class-specific thresholds were optimized using Out-of-Fold (OOF) validation predictions to improve issue detection performance.
-
-### 7. Review Analysis 📊
-
-Applied the trained model to unlabeled reviews to extract insights on sentiment distribution, issue frequency, and university-level patterns.
-
-Built an interactive Excel dashboard (Pivot Tables, Pivot Charts, slicers) to visualize sentiment trends, issue categories, and temporal dynamics across universities.
-
----
-
-## 🧾 Model Pipeline
-
-```text
-Review Text
-    ↓
-Sentence Embeddings
-    ↓
-One-vs-Rest Logistic Regression
-    ↓
-Class Probabilities
-    ↓
-Threshold Optimization
-    ↓
-Predicted Issue Categories
-    ↓
-Analytical Excel Dashboard	
-```
-
----
-
-## 📈 Results
-
-### Validation Performance
-
-| Metric | Score |
-|----------|----------|
-| Micro-F1 | 79 |
-| Macro-F1 | 79 |
-
-### 🔍 Error Analysis
-
-The model was evaluated using:
-
-- Per-class confusion matrices
-- Pairwise class confusion analysis
-- Manual review of prediction examples
-
----
-
-## 📊 Visualizations
-
-### 📉 Class Imbalance
-
-Shows distribution of sentiment and issue categories.
-
-![Class Imbalance](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/%D1%81lass_imbalance.png)
-
-### 🎯 Precision-Recall Curve
-
-Evaluates model performance across different thresholds.
-
-![Precision-Recall Curve](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/precision_recall_curve.png)
-
-### 🧩 Confusion Matrix
-
-Shows which classes the model confuses most.
-
-![Confusion Matrix](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/confusion_matrix.png)
-
----
-
-## Random prediction examples
+### Prediction Examples
 
 ![Random prediction examples](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/random%20prediction%20examples.png)
 
----
+## Key Insights
 
-## 📊 Analytical Excel Dashboard
+## Limitations
 
+Results should be interpreted with caution, as online reviews may not represent the full student population. 
+The approach is most valuable when applied to large-scale feedback collected from trusted and consistent sources, such as official university feedback platforms or customer review systems maintained by organizations. In such cases, automated sentiment and topic analysis can support continuous monitoring of user feedback and help identify emerging issues at an early stage.
 
-![Analytical Excel Dashboard](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Dashboard.png)
-
+## Future Improvements
 
 ---
 
