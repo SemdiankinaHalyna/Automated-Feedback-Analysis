@@ -1,4 +1,5 @@
-# University Reviews Analysis
+# Automated Issue Detection in Feedback Systems
+# Case Study: Higher Education
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![ML](https://img.shields.io/badge/Machine%20Learning-NLP-orange)
@@ -7,28 +8,14 @@
 
 ## 📘 Project Overview
 
-This project analyzes student reviews of universities using **Natural Language Processing (NLP)** and machine learning.
+This project presents an end-to-end feedback analytics pipeline designed to support the analysis of large volumes of user feedback. The solution combines web scraping, natural language processing and machine learning to identify recurring issues, analyze sentiment and provide actionable insights through interactive dashboards.
 
-It combines:
-- Sentiment analysis
-- Multi-label issue detection
-- Topic discovery via clustering
-- Model evaluation and error analysis
-
-The goal is to understand **what problems students report most frequently and how they vary across universities**.
-
-Detected issue categories:
-
-- Attitude Towards Students
-- Campus Conditions
-- Corruption
-- Academic Process Management
-- Education Quality
+Although demonstrated using higher education reviews, the proposed approach can be applied to feedback systems in various industries, including finance, e-commerce and customer support.
 
 ---
 
 💡  **Note:**  
-**This project is intended solely for educational and research purposes** and does not represent any official evaluation or ranking of the institutions.  
+**This project demonstrates a feedback analytics methodology** using higher education reviews as an example. It is not intended to provide an official evaluation or ranking of educational institutions.  
 **For privacy reasons, the universities are anonymized** and referred to by numbers (e.g., University_1, University_2).
 
 ## 📋 Data Description:
