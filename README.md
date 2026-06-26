@@ -53,6 +53,8 @@ The project follows a structured end-to-end pipeline for processing and analyzin
 - Issue categories identified (Attitude Towards Students, Campus Conditions, Corruption, Academic Process Management, Education Quality)
 - Developed a multi-label classification model for automatic issue detection (F1 micro = 0.79) and demonstrated reliable performance across major issue categories.
 - Built an interactive dashboard for monitoring sentiment, comparing universities and tracking issue trends.
+  
+![Analytical Excel Dashboard](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Dashboard.png)
 
 
 
