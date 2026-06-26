@@ -1,5 +1,5 @@
 # Automated Issue Detection in Feedback Systems
-# Case Study: Higher Education
+### Case Study: Higher Education
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![ML](https://img.shields.io/badge/Machine%20Learning-NLP-orange)
@@ -8,38 +8,36 @@
 
 ## 📘 Project Overview
 
-This project presents an end-to-end feedback analytics pipeline designed to support the analysis of large volumes of user feedback. The solution combines web scraping, natural language processing and machine learning to identify recurring issues, analyze sentiment and provide actionable insights through interactive dashboards.
+This project focuses on analyzing large-scale user feedback to extract actionable insights from unstructured text data. It addresses the challenge of transforming raw reviews into structured information that can support decision-making through sentiment analysis and issue detection.
 
 Although demonstrated using higher education reviews, the proposed approach can be applied to feedback systems in various industries, including finance, e-commerce and customer support.
-
----
 
 💡  **Note:**  
 **This project demonstrates a feedback analytics methodology** using higher education reviews as an example. It is not intended to provide an official evaluation or ranking of educational institutions.  
 **For privacy reasons, the universities are anonymized** and referred to by numbers (e.g., University_1, University_2).
 
-## 📋 Data Description:
+---
 
-- Number of universities: 21
-- Data volume: over 6,000 open reviews
-- Sources: collected from 3 public platforms
-- Data structure:
-- University Name
-- Reviews Count
-- Average Rating
-- Review Date
-- Review Rating
-- Review Text
+## Business Problem
 
-## 🔁 Project Workflow
+Organizations receive large volumes of user feedback through reviews and surveys. Manual analysis is time-consuming, subjective, difficult to scale and often delays the identification of recurring or emerging issues.
 
-### 1. Data Collection 🌐
+## Solution
 
-University reviews were collected from public online sources using Selenium and BeautifulSoup.
+Developed an end-to-end feedback analytics pipeline that automatically collects reviews, analyzes sentiment, identifies key issues using NLP and machine learning, and provides actionable insights through interactive dashboards. 
 
-### 2. Data Preparation 🧹
+## Expected Business Value
 
-The reviews were cleaned, filtered, and prepared for analysis.
+- Reduces manual effort required to analyze large volumes of feedback.
+- Enables early detection of emerging issues.
+- Supports data-driven decision making.
+- Helps prioritize improvement initiatives based on the frequency and trends of reported issues.
+
+
+## Methodology
+
+The project follows a structured end-to-end pipeline for processing and analyzing user feedback, combining NLP and machine learning techniques.
+![Pipeline](path/to/image.png)
 
 ### 3. Topic Identification 🔍
 
