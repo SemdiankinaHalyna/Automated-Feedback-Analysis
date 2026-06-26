@@ -39,17 +39,23 @@ Developed an end-to-end feedback analytics pipeline that automatically collects 
 The project follows a structured end-to-end pipeline for processing and analyzing user feedback, combining NLP and machine learning techniques.
 ![Pipeline](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/pipeline.png)
 
-### 3. Topic Identification 🔍
+## Skills
+- Data Collection 
+- Data Preparation 
+- Natural Language Processing 
+- Machine Learning 
+- Data Visualization 
+- Business Reporting
 
-Clustering and topic modeling techniques (K-Means, DBSCAN, UMAP, and BERTopic) were used to explore recurring themes in student reviews.
+## Key Results
 
-The discovered patterns helped define the final issue categories, which were then manually annotated and used to train the multi-label classification model.
+- Collected and processed 6,000+ student reviews from multiple public sources. 
+- Issue categories identified (Attitude Towards Students, Campus Conditions, Corruption, Academic Process Management, Education Quality)
+- Developed a multi-label classification model for automatic issue detection (F1 micro = 0.79) and demonstrated reliable performance across major issue categories.
+- Built an interactive dashboard for monitoring sentiment, comparing universities and tracking issue trends.
 
-### 4. Text Embeddings 🤖
 
-Each review was converted into a numerical representation using multilingual sentence embeddings:
 
-`paraphrase-multilingual-mpnet-base-v2`
 
 ### 5. Multi-label Classification 🧠
 
