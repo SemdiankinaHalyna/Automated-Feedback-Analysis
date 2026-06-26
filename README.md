@@ -37,7 +37,7 @@ Developed an end-to-end feedback analytics pipeline that automatically collects 
 ## Methodology
 
 The project follows a structured end-to-end pipeline for processing and analyzing user feedback, combining NLP and machine learning techniques.
-![Pipeline](path/to/image.png)
+![Pipeline](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/pipeline.png)
 
 ### 3. Topic Identification 🔍
 
