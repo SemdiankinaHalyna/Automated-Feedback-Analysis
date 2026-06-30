@@ -28,11 +28,10 @@ Developed an end-to-end feedback analytics pipeline that automatically collects 
 
 ## Expected Business Value
 
-- Reduces manual effort required to analyze large volumes of feedback.
-- Enables early detection of emerging issues.
-- Supports data-driven decision making.
-- Helps prioritize improvement initiatives based on the frequency and trends of reported issues.
-
+- Reduced manual workload in feedback analysis  
+- Improved early detection of emerging issues and trends  
+- Supported prioritization of product and service improvements  
+- Enhanced data-driven decision-making through structured feedback insights  
 
 ## Methodology
 
