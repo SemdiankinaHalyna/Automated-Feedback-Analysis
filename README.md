@@ -63,8 +63,6 @@ The project follows a structured end-to-end pipeline for processing and analyzin
 
 ## Key Dashboard Insights
 
-Insights are presented from an organizational perspective, focusing on relative shares, issue distribution, and temporal trends to support decision-making
-
 ### Sentiment Distribution
 - 🟢 **Positive:** 55.5%
 - 🔴 **Negative:** 36.4%
