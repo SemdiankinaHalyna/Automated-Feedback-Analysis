@@ -54,14 +54,25 @@ The project follows a structured end-to-end pipeline for processing and analyzin
 - Developed a multi-label classification model for automatic issue detection (F1 micro = 0.79) and demonstrated reliable performance across major issue categories.
 - Built an interactive dashboard for monitoring sentiment, comparing universities and tracking issue trends.
 
-### 📊 Analytical Excel Dashboard
-![Analytical Excel Dashboard](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Dashboard.png)
-
 ### Prediction Examples
 
 ![Random prediction examples](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/random%20prediction%20examples.png)
 
-## Key Insights
+
+### 📊 Analytical Excel Dashboard
+![Analytical Excel Dashboard](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Dashboard.png)
+
+### How to Interpret the Dashboard
+The dashboard can serve different purposes depending on the audience.
+
+For prospective students, absolute numbers and university comparisons are often more informative, as they help assess how frequently specific issues are mentioned and compare institutions.
+For organizations, relative metrics, issue distribution and trend analysis provide greater value, as they support monitoring overall feedback, identifying recurring problems and evaluating changes over time.
+
+The insights presented below are interpreted from the perspective of an organization using feedback analytics to support continuous improvement.
+
+## Key Dashboard Insights
+
+
 
 ## Limitations
 
