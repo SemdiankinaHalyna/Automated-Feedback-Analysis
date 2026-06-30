@@ -62,22 +62,35 @@ The project follows a structured end-to-end pipeline for processing and analyzin
 ### 📊 Analytical Excel Dashboard
 ![Analytical Excel Dashboard](https://github.com/SemdiankinaHalyna/University-review-analysis/blob/main/Images/Dashboard.png)
 
-### How to Interpret the Dashboard
-The dashboard can serve different purposes depending on the audience.
-
-For prospective students, absolute numbers and university comparisons are often more informative, as they help assess how frequently specific issues are mentioned and compare institutions.
-For organizations, relative metrics, issue distribution and trend analysis provide greater value, as they support monitoring overall feedback, identifying recurring problems and evaluating changes over time.
-
-The insights presented below are interpreted from the perspective of an organization using feedback analytics to support continuous improvement.
-
 ## Key Dashboard Insights
 
+Insights are presented from an organizational perspective, focusing on relative shares, issue distribution, and temporal trends to support decision-making
 
+### Sentiment Distribution
+- 🟢 **Positive:** 55.5%
+- 🔴 **Negative:** 36.4%
+- ⚪ **Neutral:** 8.1%
+
+### Main Issue Areas
+- Quality of education (largest share)
+- Academic process management
+- Attitude towards students
+
+### Issue Distribution (Top vs Bottom)
+- 📈 Quality of education: **28%** (highest)
+- 📉 Campus conditions: **11%** (lowest)
+
+### Temporal Trend (2009–2023)
+- Steady increase in issue-related feedback over time
+
+### Post-2023 Shift
+- 📉 Decrease in corruption-related mentions
+- 📈 Increase in academic process management concerns
 
 ## Limitations
 
-Results should be interpreted with caution, as online reviews may not represent the full student population. 
-The approach is most valuable when applied to large-scale feedback collected from trusted and consistent sources, such as official university feedback platforms or customer review systems maintained by organizations. In such cases, automated sentiment and topic analysis can support continuous monitoring of user feedback and help identify emerging issues at an early stage.
+Results should be interpreted with caution, as online reviews may not fully represent the entire student population.
+The approach is most valuable when applied to large-scale feedback collected from trusted and consistent sources, such as official university feedback platforms or customer review systems maintained by organizations. In such settings, automated sentiment and topic analysis enables continuous monitoring of user feedback and early detection of emerging issues.
 
 ## Future Improvements
 
