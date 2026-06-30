@@ -1,4 +1,4 @@
-# Automated Issue Detection in Feedback Systems
+# Automated Feedback Analysis for Decision Support
 ### Case Study: Higher Education
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
@@ -103,8 +103,7 @@ The approach is most valuable when applied to large-scale feedback collected fro
 ## 🛠 Technologies 
 
 **Data Collection & Processing:**  
-`Selenium`, `BeautifulSoup`, `Pandas`, `NumPy`, `langdetect`, `re`, `stanza`, `pymorphy2`,  
-`collections.Counter`, `PyTorch`)`
+`Selenium`, `BeautifulSoup`, `Pandas`, `NumPy`, `langdetect`, `re`
 
 **Machine Learning & NLP:**  
 `PyTorch`, `Scikit-learn (Logistic Regression, TF-IDF Vectorizer)`,  
@@ -113,7 +112,7 @@ The approach is most valuable when applied to large-scale feedback collected fro
 `SciPy`, `OS`, `Joblib`
 
 **Visualization & Clustering:**  
-`Matplotlib`, `Seaborn`, `Plotly`, `UMAP`, `WordCloud`,  
+`Excel`, `Matplotlib`, `Seaborn`, `Plotly`, `UMAP`,  
 `K-means`, `HDBSCAN`, `BERTopic`
 
 
