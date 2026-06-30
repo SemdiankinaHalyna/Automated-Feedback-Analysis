@@ -87,7 +87,7 @@ Insights are presented from an organizational perspective, focusing on relative 
 - 📉 Decrease in corruption-related mentions
 - 📈 Increase in academic process management concerns
 
-## Limitations
+## 💡 Limitations
 
 Results should be interpreted with caution, as online reviews may not fully represent the entire student population.
 The approach is most valuable when applied to large-scale feedback collected from trusted and consistent sources, such as official university feedback platforms or customer review systems maintained by organizations. In such settings, automated sentiment and topic analysis enables continuous monitoring of user feedback and early detection of emerging issues.
